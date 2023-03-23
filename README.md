@@ -71,7 +71,7 @@ In order to run this project you need:
 
 ```
    sh
-   git@github.com:Nasirkhan294/Microverse.git
+   git@github.com:Nasirkhan294/my-personal-portfolio.git
 ```
 
 ### Setup
@@ -81,7 +81,7 @@ Clone this repository to your desired folder:
 ```
   sh
   cd my-folder
-  git clone git@github.com:Nasirkhan294/Microverse.git
+  git clone git@github.com:Nasirkhan294/my-personal-portfolio.git
 ```
 
 ### Deployment
