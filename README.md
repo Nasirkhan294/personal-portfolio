@@ -47,6 +47,9 @@
 
 - **[Header-section]**
 - **[Hero-section]**
+- **[Portfolio-section]**
+- **[About-section]**
+- **[Contact-section]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -112,9 +115,9 @@ github pages
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [X] **[Modified-HTML-struture]**
-- [X] **[Advanced-CSS-Style]**
-- [ ] **[Interactivity]**
+- [X] **[Updated-HTML]**
+- [X] **[Modified-CSS-Style]**
+- [ ] **[JavaScript-Interactivity]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
