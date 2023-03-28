@@ -250,42 +250,42 @@
               </ul>
               <button class="btn">Get my resume</button>
             </div>
-            <div class="dropdown-wrapper">
-              <div class="about-dropdown">
-                <div class="language-data">
-                  <h3>Languages</h3>
-                  <div class="language-name">
-                    <i class="fa-brands fa-node-js javascript"></i>
-                    <p>JavaScript</p>
-                  </div>
-                  <div class="language-name">
-                    <i class="fa-brands fa-html5 html"></i>
-                    <p>HTML</p>
-                  </div>
-                  <div class="language-name">
-                    <i class="fa-brands fa-css3-alt css"></i>
-                    <p>CSS</p>
-                  </div>
+          </div>
+          <div class="dropdown-wrapper">
+            <div class="about-dropdown">
+              <div class="language-data">
+                <h3>Languages</h3>
+                <div class="language-name">
+                  <i class="fa-brands fa-node-js javascript"></i>
+                  <p>JavaScript</p>
                 </div>
-                <div class="dropdown-icon">
-                  <i class="fa-solid fa-caret-down"></i>
+                <div class="language-name">
+                  <i class="fa-brands fa-html5 html"></i>
+                  <p>HTML</p>
+                </div>
+                <div class="language-name">
+                  <i class="fa-brands fa-css3-alt css"></i>
+                  <p>CSS</p>
                 </div>
               </div>
-              <div class="about-dropdown">
-                <div class="framworks-data">
-                  <h3>Frameworks</h3>
-                </div>
-                <div class="dropdown-icon">
-                  <i class="fa-solid fa-caret-down"></i>
-                </div>
+              <div class="dropdown-icon">
+                <i class="fa-solid fa-caret-down"></i>
               </div>
-              <div class="about-dropdown">
-                <div class="skills-data">
-                  <h3>Skills</h3>
-                </div>
-                <div class="dropdown-icon">
-                  <i class="fa-solid fa-caret-down"></i>
-                </div>
+            </div>
+            <div class="about-dropdown">
+              <div class="framworks-data">
+                <h3>Frameworks</h3>
+              </div>
+              <div class="dropdown-icon">
+                <i class="fa-solid fa-caret-down"></i>
+              </div>
+            </div>
+            <div class="about-dropdown">
+              <div class="skills-data">
+                <h3>Skills</h3>
+              </div>
+              <div class="dropdown-icon">
+                <i class="fa-solid fa-caret-down"></i>
               </div>
             </div>
           </div>
@@ -301,20 +301,29 @@
             feature that you need built or a project that needs coding. I’d love
             to help with it!
           </p>
-          <form action="#">
-            <input type="text" placeholder="full name" class="contact-input" />
+          <form action="https://formspree.io/f/{form_id}" method="post">
             <input
               type="text"
-              placeholder="@example.gmail.com"
+              maxlength="30"
+              placeholder="full name"
               class="contact-input"
+              required
+            />
+            <input
+              type="email"
+              placeholder="example@gmail.com"
+              class="contact-input"
+              required
             />
             <textarea
-              name=""
-              id=""
+              name="textarea"
+              id="textarea"
               cols="0"
               rows="6"
               placeholder="your message here..."
               class="contact-input"
+              maxlength="500"
+              required
             ></textarea>
             <input type="button" class="btn" value="Get in touch" />
           </form>
