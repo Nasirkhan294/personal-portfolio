@@ -210,6 +210,8 @@ header .menu-bars:hover {
 }
 
 #portfolio .languages {
+  display: flex;
+  align-items: center;
   margin: 1em 0;
 }
 
@@ -219,7 +221,6 @@ header .menu-bars:hover {
   padding: 5px 10px;
   border: none;
   border-radius: 8px;
-  float: left;
 }
 
 #portfolio .languages li:nth-of-type(2) {
