@@ -364,7 +364,10 @@ form {
   padding: 1em;
   margin-bottom: .5em;
   border: none;
-  outline: none;
+  border-radius: .5em;
   color: #172B4D;
 }
 
+#contact .btn {
+  margin-right: 10em;
+}
