@@ -50,6 +50,7 @@ header {
   border-radius: 8px;
   cursor: pointer;
   font-size: 1em;
+  width: 53%;
 }
 
 .btn:hover {
@@ -102,24 +103,26 @@ header .menu-bars:hover {
 /* -------------------- Mobile Styles - Homepage -------------------- */
 /* === Hero Area Styles === */
 .hero-area {
-  background-image: url(../images/header-shapes\ mobile.png);
-  background-size: cover;
-  background-position: center center;
+  background-image: url(../images/hero-img.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right 0;
   background-color: #fff;
   display: flex;
   justify-content: center;
-  flex-flow: row wrap;
   border-bottom-left-radius: 3em;
+  min-height: 100vh;
 }
 
 .hero-area .container {
   display: flex;
   justify-content: center;
-  flex-flow: row wrap;
+  align-items: center;
+  flex-direction: column;
 }
 
 .hero-main-content {
-  margin: 90px 0 20px 0;
+  margin: 5.625em 0 1.25em;
   width: 100%;
 }
 
@@ -144,7 +147,7 @@ header .menu-bars:hover {
 .hero-social ul {
   display: flex;
   justify-content: space-between;
-  width: 49%;
+  width: 60%;
 }
 
 .hero-social ul i {
@@ -156,7 +159,8 @@ header .menu-bars:hover {
 
 /* === Portfolio Styles === */
 #portfolio {
-  padding: 7em 0;
+  display: flex;
+  justify-content: center;
   background-color: #e5e5e5;
 }
 
@@ -164,15 +168,15 @@ header .menu-bars:hover {
   display: grid;
   grid-template-columns: 100%;
   grid-gap: 2rem;
-  margin: 0 1em;
+  margin: 7em 0;
 }
 
 #portfolio .portfolio-card {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 1em;
   background-color: #fff;
-  padding: 1em 1em 2em 1em;
+  padding: 1em;
   border: 1px solid #dfe1e6;
   border-radius: 20px;
 }
@@ -211,7 +215,7 @@ header .menu-bars:hover {
 #portfolio .languages {
   display: flex;
   align-items: center;
-  margin: 1em 0;
+  margin: 2em 0;
 }
 
 #portfolio .languages li {
@@ -228,6 +232,8 @@ header .menu-bars:hover {
 
 /* === About Style === */
 #about {
+  display: flex;
+  justify-content: center;
   background-color: #fff;
   border-top-right-radius: 3em;
 }
@@ -236,7 +242,6 @@ header .menu-bars:hover {
   display: grid;
   grid-template-columns: 100%;
   grid-gap: 2rem;
-  margin: 0 1em;
 }
 
 .about-main-content {
@@ -281,7 +286,13 @@ header .menu-bars:hover {
   justify-content: space-between;
   align-items: center;
   flex-flow: row wrap;
-  margin: 1.5em 0 1em 0.5em;
+  margin: 1.5em 0;
+}
+
+.about-dropdown:nth-of-type(2),
+.about-dropdown:nth-of-type(3) {
+  border-bottom: 1px solid #dfe1e6;
+  padding-bottom: 1em;
 }
 
 .dropdown-icon {
@@ -293,11 +304,18 @@ header .menu-bars:hover {
   width: 90%;
 }
 
+.language-name-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 0.9em;
+}
+
 .language-name {
   display: flex;
   align-items: center;
   background-color: #f7f7f9;
-  margin: 0.8em 0;
+  margin: 0.2em 0;
   padding: 0.5em;
 }
 
@@ -306,15 +324,21 @@ header .menu-bars:hover {
   padding: 0.325em;
   border: none;
   border-radius: 50%;
-  margin-right: 1.25em;
+  align-self: flex-start;
 }
+.language-name p {
+  margin-left: 1em;
+}
+
 .language-name .javascript {
   background-color: #ffff00;
 }
+
 .language-name .html {
   background-color: #ff4500;
   color: #fff;
 }
+
 .language-name .css {
   background-color: #00ffff;
   color: #fff;
@@ -322,24 +346,23 @@ header .menu-bars:hover {
 
 /* === Contact Styles === */
 #contact {
-  background-image: url(../images/contact\ form\ shapes-mobile@2x.png);
-  background-size: cover;
+  background-image: url(../images/contact-img.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right 0;
   background-color: #6070ff;
   display: flex;
   justify-content: center;
   align-items: center;
   border-top-left-radius: 3em;
-  margin-top: 3em;
 }
 
 #contact .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 5em 0 3em 0;
+  display: grid;
+  grid-template-columns: 100%;
+  padding: 5em 0 0;
   text-align: center;
-  margin: 2em 0 0 0;
+  margin: 2em;
 }
 
 #contact h2 {
@@ -355,7 +378,6 @@ header .menu-bars:hover {
 form {
   margin: 2em 0 1em 0;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
@@ -364,7 +386,7 @@ form {
   width: 100%;
   font-size: 1em;
   padding: 1em;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
   border: none;
   border-radius: 0.5em;
   color: #172b4d;
@@ -372,4 +394,163 @@ form {
 
 #contact .btn {
   align-self: flex-start;
+  text-align: center;
+}
+
+/* -------------------- Break Points for Tablet & Desktop Layout -------------------- */
+@media only screen and (min-width: 768px) {
+  /* ========== Tablet Styles ========== */
+
+  /* ------------ General Styles ---------- */
+  .btn {
+    width: 40%;
+  }
+
+  /* ------------ Header Styles ---------- */
+
+  header .logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+  }
+
+  header .menu-bars {
+    display: none;
+  }
+
+  header nav {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  header nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: capitalize;
+  }
+
+  /* ------------ Hero Area Styles ---------- */
+  .hero-area {
+    background-image: url(../images/hero-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .hero-area .container {
+    margin-bottom: 4em;
+  }
+
+  .hero-main-content {
+    max-width: 500px;
+  }
+  .hero-social {
+    max-width: 500px;
+  }
+
+  .hero-social ul {
+    width: 40%;
+  }
+
+  /* ------------ Portfolio Styles ---------- */
+
+  #portfolio .portfolio-card {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2em;
+    grid-auto-flow: dense;
+  }
+
+  #portfolio .portfolio-card:nth-of-type(2),
+  #portfolio .portfolio-card:nth-of-type(4) {
+    direction: rtl;
+  }
+
+  #portfolio .portfolio-content:nth-of-type(2) {
+    direction: ltr;
+  }
+
+  #portfolio .portfolio-card:nth-of-type(3) .btn {
+    background-color: #4053fc;
+    color: #fff;
+  }
+
+  #portfolio .portfolio-thumbnail img {
+    min-height: 85vh;
+  }
+
+  #portfolio h2 {
+    font-size: 1.5em;
+  }
+
+  #portfolio p {
+    font-size: 0.9em;
+  }
+
+  #portfolio .list-items {
+    font-size: 0.9em;
+  }
+
+  #portfolio .languages {
+    margin: 1.2em 0;
+  }
+  /* ------------ About Styles ---------- */
+  #about {
+    margin-bottom: -3em;
+    padding-bottom: 3em;
+  }
+
+  #about .container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  #about .btn {
+    width: 47%;
+  }
+
+  .language-name-wrapper {
+    flex-direction: row;
+  }
+
+  .language-name {
+    width: 40%;
+    flex-direction: column;
+  }
+
+  .language-name:nth-of-type(2) {
+    margin: 0 0.5em;
+  }
+
+  .language-name p {
+    margin-top: 1em;
+    margin-left: 0;
+  }
+  .language-name i {
+    align-self: center;
+  }
+  /* ------------ Contact Styles ---------- */
+
+  #contact {
+    background-image: url(../images/contact-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  #contact .container {
+    align-items: center;
+    margin: 4em 12em;
+  }
+
+  #contact h2 {
+    font-size: 2em;
+  }
+
+  #contact .btn {
+    width: 35%;
+    align-self: center;
+  }
 }
