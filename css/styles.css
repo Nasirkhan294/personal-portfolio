@@ -60,22 +60,41 @@ a {
   color: #fff;
 }
 
+.flex-row {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.column {
+  grid-template-columns: 100%;
+  grid-gap: 2em;
+}
+
 /* -------------------- Base Header Styles -------------------- */
 
 header {
   background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
   padding: 15px 0;
 }
 
 header .container {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-flow: row wrap;
   margin: 10px;
 }
 
@@ -105,16 +124,11 @@ header .menu-bars:hover {
   background-repeat: no-repeat;
   background-position: right center;
   background-color: #fff;
-  display: flex;
-  justify-content: center;
   border-bottom-left-radius: 3em;
   min-height: 100vh;
 }
 
 .hero-area .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 
@@ -142,7 +156,6 @@ header .menu-bars:hover {
 }
 
 .hero-social ul {
-  display: flex;
   justify-content: space-between;
   width: 60%;
 }
@@ -160,62 +173,66 @@ header .menu-bars:hover {
 
 /* === Portfolio Styles === */
 #portfolio {
-  display: flex;
-  justify-content: center;
   background-color: #e5e5e5;
 }
 
 #portfolio .container {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-gap: 2rem;
   margin: 7em 0;
 }
 
 #portfolio .portfolio-card {
-  display: grid;
   grid-template-columns: 100%;
   grid-gap: 1em;
   background-color: #fff;
   padding: 1em;
   border: 1px solid #dfe1e6;
-  border-radius: 20px;
+  border-radius: 1.5em;
+  align-items: center;
 }
 
 #portfolio .portfolio-thumbnail {
-  border-radius: 20px;
+  border-radius: 0.5em;
 }
 
 #portfolio .portfolio-thumbnail img {
   width: 100%;
-  border-radius: 20px;
-}
-
-#portfolio .portfolio-content {
-  display: flex;
-  flex-direction: column;
-  margin: 1em 0;
+  border-radius: 0.5em;
 }
 
 #portfolio .list-items {
-  display: flex;
   justify-content: flex-start;
-  align-items: center;
   margin: 1em 0;
+  list-style-type: circle;
+}
+
+#portfolio .list-items li {
+  font-size: 0.8em;
+  font-weight: 500;
+  color: #6b778c;
 }
 
 #portfolio .list-items li:nth-of-type(1) {
+  color: #344563;
+  font-size: 1em;
   font-weight: 700;
-  text-transform: uppercase;
+  list-style: none;
+  margin: 0;
+  margin-right: 0.5em;
 }
 
 #portfolio .list-items li:nth-of-type(2) {
-  margin: 0 1.25em;
+  margin: 0 1.5em;
+}
+
+#portfolio .list-items li:nth-of-type(3) {
+  margin-left: 0.5em;
+}
+
+#portfolio h2 {
+  color: #172b4d;
 }
 
 #portfolio .languages {
-  display: flex;
-  align-items: center;
   margin: 1.5em 0;
 }
 
@@ -233,35 +250,32 @@ header .menu-bars:hover {
 
 /* === About Style === */
 #about {
-  display: flex;
-  justify-content: center;
   background-color: #fff;
   border-top-right-radius: 3em;
   margin-bottom: -3em;
-  padding-bottom: 3em;
-}
-
-#about .container {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-gap: 2rem;
+  padding-bottom: 6em;
 }
 
 .about-main-content {
-  margin: 90px 0 20px 0;
+  margin: 5.625em 0 1.25em 0;
   width: 100%;
 }
 
 #about h2 {
-  font-size: 2.3em;
+  font-size: 2.5em;
   font-weight: 700;
   margin-bottom: 10px;
   color: #172b4d;
 }
 
+#about h3 {
+  font-size: 1.25em;
+  font-weight: normal;
+  color: #000000;
+}
+
 .about-social {
   width: 100%;
-  margin-bottom: 50px;
 }
 
 .about-social p {
@@ -272,7 +286,6 @@ header .menu-bars:hover {
 }
 
 .about-social ul {
-  display: flex;
   justify-content: space-between;
   width: 55%;
   margin: 0.625em 0;
@@ -290,9 +303,7 @@ header .menu-bars:hover {
 }
 
 .about-dropdown {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-flow: row wrap;
   margin: 1.5em 0;
 }
@@ -313,15 +324,12 @@ header .menu-bars:hover {
 }
 
 .language-name-wrapper {
-  display: flex;
   flex-direction: column;
   width: 100%;
   margin-top: 0.9em;
 }
 
 .language-name {
-  display: flex;
-  align-items: center;
   background-color: #f7f7f9;
   margin: 0.2em 0;
   padding: 0.5em;
@@ -359,15 +367,10 @@ header .menu-bars:hover {
   background-repeat: no-repeat;
   background-position: right 0;
   background-color: #6070ff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-top-left-radius: 3em;
 }
 
 #contact .container {
-  display: grid;
-  grid-template-columns: 100%;
   padding: 5em 0 0;
   text-align: center;
   margin: 2em;
@@ -378,17 +381,9 @@ header .menu-bars:hover {
 }
 
 #contact p {
-  margin: 1em 0.5em;
-  font-size: 0.8em;
-  color: #fff;
-  font-size: 0.9em;
-}
-
-form {
-  margin: 2em 0 1em 0;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  margin: 1em 0;
+  font-size: 1em;
+  color: #ebebff;
 }
 
 .contact-input {
@@ -421,9 +416,6 @@ form textarea {
   /* ------------ Header Styles ---------- */
 
   header .logo-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 20%;
   }
 
@@ -492,22 +484,17 @@ form textarea {
     direction: ltr;
   }
 
-  #portfolio .portfolio-card:nth-of-type(3) .btn {
-    background-color: #4053fc;
-    color: #fff;
-  }
-
-  #portfolio .portfolio-card:nth-of-type(3) .btn:hover {
-    background-color: #fff;
-    color: #4053fc;
-  }
-
   #portfolio .portfolio-thumbnail img {
     min-height: 85vh;
+  } 
+
+  #portfolio .list-items li {
+    font-size: 1.125em;
   }
 
   #portfolio h2 {
     font-size: 1.5em;
+    color: #091e42;
   }
 
   #portfolio p {
@@ -523,6 +510,10 @@ form textarea {
   #about .container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+  }
+
+  #about .dropdown-wrapper {
+    margin-top: 6em;
   }
 
   .about-social ul {
@@ -574,6 +565,10 @@ form textarea {
 
   #contact h2 {
     font-size: 2em;
+  }
+
+  #contact p {
+    font-size: 1.2em;
   }
 
   #contact .btn {
@@ -633,6 +628,10 @@ form textarea {
     min-height: 50vh;
   }
 
+  #portfolio .portfolio-content {
+    margin-bottom: 3em;
+  }
+
   /* ------------ About Styles ---------- */
   .about-social ul {
     width: 38%;
@@ -641,7 +640,7 @@ form textarea {
   #about .btn {
     width: 35%;
   }
-
+  /* ------------ Contact Styles ---------- */
   #contact .container {
     max-width: 400px;
   }
