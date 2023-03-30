@@ -34,14 +34,6 @@ a {
   width: 90%;
 }
 
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  padding: 15px 0;
-}
-
 .btn {
   background-color: #fff;
   color: #396df2;
@@ -51,6 +43,11 @@ header {
   cursor: pointer;
   font-size: 1em;
   width: 53%;
+}
+
+.btn:enabled {
+  background-color: #fff;
+  color: #396df2;
 }
 
 .btn:hover {
@@ -63,15 +60,15 @@ header {
   color: #fff;
 }
 
-.btn:enabled {
-  background-color: #fff;
-  color: #396df2;
-}
-
 /* -------------------- Base Header Styles -------------------- */
 
 header {
   background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 15px 0;
 }
 
 header .container {
@@ -106,7 +103,7 @@ header .menu-bars:hover {
   background-image: url(../images/hero-img.png);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: right 0;
+  background-position: right center;
   background-color: #fff;
   display: flex;
   justify-content: center;
@@ -155,6 +152,10 @@ header .menu-bars:hover {
   font-weight: 700;
   margin: 12px 0;
   color: #505f79;
+}
+
+.hero-social ul i:hover {
+  color: #6070ff;
 }
 
 /* === Portfolio Styles === */
@@ -215,7 +216,7 @@ header .menu-bars:hover {
 #portfolio .languages {
   display: flex;
   align-items: center;
-  margin: 2em 0;
+  margin: 1.5em 0;
 }
 
 #portfolio .languages li {
@@ -236,6 +237,8 @@ header .menu-bars:hover {
   justify-content: center;
   background-color: #fff;
   border-top-right-radius: 3em;
+  margin-bottom: -3em;
+  padding-bottom: 3em;
 }
 
 #about .container {
@@ -265,12 +268,13 @@ header .menu-bars:hover {
   font-size: 1em;
   color: #6070ff;
   text-transform: uppercase;
+  font-weight: 500;
 }
 
 .about-social ul {
   display: flex;
   justify-content: space-between;
-  width: 60%;
+  width: 55%;
   margin: 0.625em 0;
 }
 
@@ -279,6 +283,10 @@ header .menu-bars:hover {
   font-weight: 700;
   margin: 12px 0;
   color: #505f79;
+}
+
+.about-social ul i:hover {
+  color: #6070ff;
 }
 
 .about-dropdown {
@@ -373,6 +381,7 @@ header .menu-bars:hover {
   margin: 1em 0.5em;
   font-size: 0.8em;
   color: #fff;
+  font-size: 0.9em;
 }
 
 form {
@@ -384,7 +393,7 @@ form {
 
 .contact-input {
   width: 100%;
-  font-size: 1em;
+  font-size: 0.8em;
   padding: 1em;
   margin-bottom: 1em;
   border: none;
@@ -392,9 +401,12 @@ form {
   color: #172b4d;
 }
 
+form textarea {
+  color: #b3bac5 !important;
+}
+
 #contact .btn {
   align-self: flex-start;
-  text-align: center;
 }
 
 /* -------------------- Break Points for Tablet & Desktop Layout -------------------- */
@@ -434,11 +446,18 @@ form {
     text-transform: capitalize;
   }
 
+  header nav ul li a {
+    color: #344563;
+    font-weight: 500;
+  }
+
+  header nav ul li a:hover {
+    color: #6070ff;
+  }
+
   /* ------------ Hero Area Styles ---------- */
   .hero-area {
     background-image: url(../images/hero-bg.png);
-    background-size: contain;
-    background-repeat: no-repeat;
   }
 
   .hero-area .container {
@@ -478,6 +497,11 @@ form {
     color: #fff;
   }
 
+  #portfolio .portfolio-card:nth-of-type(3) .btn:hover {
+    background-color: #fff;
+    color: #4053fc;
+  }
+
   #portfolio .portfolio-thumbnail img {
     min-height: 85vh;
   }
@@ -494,18 +518,15 @@ form {
     font-size: 0.9em;
   }
 
-  #portfolio .languages {
-    margin: 1.2em 0;
-  }
   /* ------------ About Styles ---------- */
-  #about {
-    margin-bottom: -3em;
-    padding-bottom: 3em;
-  }
 
   #about .container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+  }
+
+  .about-social ul {
+    margin: 1em 0;
   }
 
   #about .btn {
@@ -538,11 +559,17 @@ form {
     background-image: url(../images/contact-bg.png);
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center top;
   }
 
   #contact .container {
     align-items: center;
-    margin: 4em 12em;
+    margin: 4em 0;
+    max-width: 300px;
+  }
+
+  .contact-input {
+    border-radius: inherit;
   }
 
   #contact h2 {
@@ -550,7 +577,80 @@ form {
   }
 
   #contact .btn {
-    width: 35%;
+    width: 45%;
     align-self: center;
+  }
+}
+
+/* ========== Desktop Styles ========== */
+@media only screen and (min-width: 1200px) {
+  /* ------------ General Styles ---------- */
+  .container {
+    max-width: 960px;
+  }
+
+  .btn {
+    width: 30%;
+  }
+
+  /* ------------ Header Styles ---------- */
+  header .logo-wrapper {
+    justify-content: flex-start;
+  }
+
+  header nav {
+    width: 30%;
+  }
+
+  /* ------------ Hero Area Styles ---------- */
+  .hero-area {
+    background-position: center center;
+  }
+
+  .hero-main-content {
+    max-width: 55em;
+  }
+
+  .hero-social {
+    max-width: 55em;
+  }
+
+  .hero-area h1 {
+    font-size: 3em;
+  }
+
+  .hero-area p {
+    font-size: 1.25em;
+  }
+
+  .hero-social ul {
+    width: 23%;
+    margin-top: 1em;
+  }
+
+  /* ------------ Portfolio Styles ---------- */
+  #portfolio .portfolio-thumbnail img {
+    min-height: 50vh;
+  }
+
+  /* ------------ About Styles ---------- */
+  .about-social ul {
+    width: 38%;
+    margin: 1em 0;
+  }
+  #about .btn {
+    width: 35%;
+  }
+
+  #contact .container {
+    max-width: 400px;
+  }
+
+  .contact-input {
+    font-size: 1.0625em;
+  }
+
+  #contact .btn {
+    width: 35%;
   }
 }
