@@ -43,6 +43,8 @@ a {
   cursor: pointer;
   font-size: 1em;
   width: 53%;
+  box-shadow: 0.4em 0.4em 1em #6070ff;
+  transition: 1s;
 }
 
 .btn:enabled {
@@ -53,6 +55,9 @@ a {
 .btn:hover {
   background-color: #6070ff;
   color: #fff;
+  font-weight: 500;
+  transform: scale(1.1);
+  box-shadow: 0.4em 0.4em 1em #6070ff inset, -0.4em -0.4em 1em #6070ff inset;
 }
 
 .btn:active {
@@ -101,6 +106,11 @@ header .container {
 header .logo {
   font-weight: 700;
   color: #6070ff;
+  transition: 1s;
+}
+
+header .logo:hover {
+  transform: scale(1.3);
 }
 
 header nav ul {
@@ -165,10 +175,12 @@ header .menu-bars:hover {
   font-weight: 700;
   margin: 12px 0;
   color: #505f79;
+  transition: 1s;
 }
 
 .hero-social ul i:hover {
-  color: #6070ff;
+  color: #2230d2;
+  transform: scale(1.2);
 }
 
 /* === Portfolio Styles === */
@@ -192,11 +204,18 @@ header .menu-bars:hover {
 
 #portfolio .portfolio-thumbnail {
   border-radius: 0.5em;
+  overflow: hidden;
 }
 
 #portfolio .portfolio-thumbnail img {
   width: 100%;
   border-radius: 0.5em;
+  cursor: pointer;
+  transition: 1s;
+}
+
+#portfolio .portfolio-thumbnail img:hover {
+  transform: scale(1.1);
 }
 
 #portfolio .list-items {
@@ -296,10 +315,12 @@ header .menu-bars:hover {
   font-weight: 700;
   margin: 12px 0;
   color: #505f79;
+  transition: 1s;
 }
 
 .about-social ul i:hover {
-  color: #6070ff;
+  color: #2230d2;
+  transform: scale(1.2);
 }
 
 .about-dropdown {
@@ -333,6 +354,11 @@ header .menu-bars:hover {
   background-color: #f7f7f9;
   margin: 0.2em 0;
   padding: 0.5em;
+  transition: 1s;
+}
+
+.language-name:hover {
+  transform: translateY(-1em)
 }
 
 .language-name i {
@@ -402,6 +428,7 @@ form textarea {
 
 #contact .btn {
   align-self: flex-start;
+  box-shadow: 0.4em 0.4em 1em #2230d2;
 }
 
 /* -------------------- Break Points for Tablet & Desktop Layout -------------------- */
@@ -445,6 +472,8 @@ form textarea {
 
   header nav ul li a:hover {
     color: #6070ff;
+    border-bottom: 2px solid #6070ff;
+    padding-bottom: .5em;
   }
 
   /* ------------ Hero Area Styles ---------- */
@@ -486,7 +515,7 @@ form textarea {
 
   #portfolio .portfolio-thumbnail img {
     min-height: 85vh;
-  } 
+  }
 
   #portfolio .list-items li {
     font-size: 1.125em;
