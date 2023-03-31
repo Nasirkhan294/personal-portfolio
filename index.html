@@ -28,11 +28,11 @@
   </head>
   <body>
     <!-- Start header section -->
-    <header>
+    <header class="flex-row justify-center align-center">
       <!-- Start container -->
-      <div class="container">
+      <div class="container flex-row align-center">
         <!-- Start logo section -->
-        <div class="logo-wrapper">
+        <div class="logo-wrapper flex-row justify-center align-center">
           <a href="#" class="logo">My Logo</a>
         </div>
         <!-- End logo section -->
@@ -56,12 +56,15 @@
     <!-- Start main section -->
     <main>
       <!-- Start hero area section -->
-      <section class="hero-area">
+      <section class="hero-area flex-row justify-center">
         <!-- Start container -->
-        <div class="container">
+        <div class="container flex-row justify-center align-center">
           <!-- Start hero main content section -->
           <div class="hero-main-content">
-            <h1>I'm Nasir Glad to see you!</h1>
+            <h1>
+              I'm Nasir.<br />
+              Glad to see you!
+            </h1>
             <p>
               I'm a software developer! I can help you build a project, feature
               or website look through some of my work and experience! If you
@@ -73,7 +76,7 @@
           <!-- Start hero social section -->
           <div class="hero-social">
             <p>Let's connect</p>
-            <ul>
+            <ul class="flex-row">
               <li>
                 <a href="#" target="_blank" rel="noopener noreferrer">
                   <i class="fa-brands fa-twitter"></i>
@@ -107,16 +110,16 @@
       </section>
       <!-- End hero area section -->
       <!-- Start portfolio section -->
-      <section id="portfolio">
-        <div class="container">
-          <div class="portfolio-card">
+      <section id="portfolio" class="flex-row justify-center">
+        <div class="container grid column">
+          <div class="portfolio-card grid">
             <div class="portfolio-thumbnail">
               <img src="images/work1.jpg" alt="Unplugged Retreat" />
             </div>
-            <div class="portfolio-content">
+            <div class="portfolio-content flex-column">
               <h2>Tonic</h2>
-              <ul class="list-items">
-                <li>canopy</li>
+              <ul class="list-items flex-row align-center">
+                <li>CANOPY</li>
                 <li>Back End Dev</li>
                 <li>2015</li>
               </ul>
@@ -124,89 +127,91 @@
                 A daily selection of privately personalized; no accounts or
                 sign-ups required.
               </p>
-              <ul class="languages">
+              <ul class="languages flex-row align-center">
                 <li>html</li>
                 <li>css</li>
                 <li>javascript</li>
               </ul>
+              <button class="btn">See Project</button>
             </div>
-            <button class="btn">See Project</button>
           </div>
-          <div class="portfolio-card">
+          <div class="portfolio-card grid">
             <div class="portfolio-thumbnail">
               <img src="images/work2.jpg" alt="Unplugged Retreat" />
             </div>
             <div class="portfolio-content">
               <h2>Multi Post Stories</h2>
-              <ul class="list-items">
-                <li>canopy</li>
-                <li>Back End Dev</li>
+              <ul class="list-items flex-row align-center">
+                <li>FACEBOOK</li>
+                <li>Full Stack Dev</li>
                 <li>2015</li>
               </ul>
               <p>
-                A daily selection of privately personalized; no accounts or
-                sign-ups required.
+                Experimental content creation feature that allows users to add
+                to an existing story over the course of a day without spamming
+                their friends.
               </p>
-              <ul class="languages">
+              <ul class="languages flex-row align-center">
                 <li>html</li>
                 <li>css</li>
                 <li>javascript</li>
               </ul>
+              <button class="btn">See Project</button>
             </div>
-            <button class="btn">See Project</button>
           </div>
-          <div class="portfolio-card">
+          <div class="portfolio-card grid">
             <div class="portfolio-thumbnail">
               <img src="images/work3.jpg" alt="Unplugged Retreat" />
             </div>
             <div class="portfolio-content">
-              <h2>Tonic</h2>
-              <ul class="list-items">
-                <li>canopy</li>
-                <li>Back End Dev</li>
+              <h2>Facebook 360</h2>
+              <ul class="list-items flex-row align-center">
+                <li>FACEBOOK</li>
+                <li>Full Stack Dev</li>
                 <li>2015</li>
               </ul>
               <p>
-                A daily selection of privately personalized; no accounts or
-                sign-ups required.
+                Exploring the future of media in Facebook's first Virtual
+                Reality app; a place to discover and enjoy 360 photos and videos
+                on Gear VR.
               </p>
-              <ul class="languages">
+              <ul class="languages flex-row align-center">
                 <li>html</li>
                 <li>css</li>
                 <li>javascript</li>
               </ul>
+              <button class="btn">See Project</button>
             </div>
-            <button class="btn">See Project</button>
           </div>
-          <div class="portfolio-card">
+          <div class="portfolio-card grid">
             <div class="portfolio-thumbnail">
               <img src="images/work4.jpg" alt="Unplugged Retreat" />
             </div>
             <div class="portfolio-content">
-              <h2>Multi Post Stories</h2>
-              <ul class="list-items">
-                <li>canopy</li>
-                <li>Back End Dev</li>
-                <li>2015</li>
+              <h2>Uber Navigation</h2>
+              <ul class="list-items flex-row align-center">
+                <li>Uber</li>
+                <li>Lead developer</li>
+                <li>2018</li>
               </ul>
               <p>
-                A daily selection of privately personalized; no accounts or
-                sign-ups required.
+                A smart assistant to make driving more safe, efficient, and fun
+                by unlocking your most expensive computer: your car.
               </p>
-              <ul class="languages">
+              <ul class="languages flex-row align-center">
                 <li>html</li>
                 <li>css</li>
                 <li>javascript</li>
               </ul>
+              <button class="btn">See Project</button>
             </div>
-            <button class="btn">See Project</button>
           </div>
         </div>
       </section>
       <!-- End portfolio section -->
       <!-- Start About section -->
-      <section id="about">
-        <div class="container">
+      <section id="about" class="flex-row justify-center">
+        <div class="container grid column">
           <div class="about-content">
             <div class="about-main-content">
               <h2>About Myself</h2>
@@ -221,7 +226,7 @@
             <!-- Start hero social section -->
             <div class="about-social">
               <p>Let's connect</p>
-              <ul>
+              <ul class="flex-row">
                 <li>
                   <a href="#" target="_blank" rel="noopener noreferrer">
                     <i class="fa-brands fa-twitter"></i>
@@ -234,7 +239,7 @@
                 </li>
                 <li>
                   <a href="#" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-solid fa-m"></i>
+                    <i class="fa-solid fa-hand-peace"></i>
                   </a>
                 </li>
                 <li>
@@ -244,7 +249,7 @@
                 </li>
                 <li>
                   <a href="#" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-regular fa-hand-peace"></i>
+                    <i class="fa-regular fa-m"></i>
                   </a>
                 </li>
               </ul>
@@ -252,27 +257,29 @@
             </div>
           </div>
           <div class="dropdown-wrapper">
-            <div class="about-dropdown">
+            <div class="about-dropdown flex-row align-center">
               <div class="language-data">
                 <h3>Languages</h3>
-                <div class="language-name">
-                  <i class="fa-brands fa-node-js javascript"></i>
-                  <p>JavaScript</p>
-                </div>
-                <div class="language-name">
-                  <i class="fa-brands fa-html5 html"></i>
-                  <p>HTML</p>
-                </div>
-                <div class="language-name">
-                  <i class="fa-brands fa-css3-alt css"></i>
-                  <p>CSS</p>
+                <div class="language-name-wrapper flex-row">
+                  <div class="language-name flex-row align-center">
+                    <i class="fa-brands fa-node-js javascript"></i>
+                    <p>JavaScript</p>
+                  </div>
+                  <div class="language-name flex-row align-center">
+                    <i class="fa-brands fa-html5 html"></i>
+                    <p>HTML</p>
+                  </div>
+                  <div class="language-name flex-row align-center">
+                    <i class="fa-brands fa-css3-alt css"></i>
+                    <p>CSS</p>
+                  </div>
                 </div>
               </div>
               <div class="dropdown-icon">
                 <i class="fa-solid fa-caret-down"></i>
               </div>
             </div>
-            <div class="about-dropdown">
+            <div class="about-dropdown flex-row align-center">
               <div class="framworks-data">
                 <h3>Frameworks</h3>
               </div>
@@ -280,7 +287,7 @@
                 <i class="fa-solid fa-caret-down"></i>
               </div>
             </div>
-            <div class="about-dropdown">
+            <div class="about-dropdown flex-row align-center">
               <div class="skills-data">
                 <h3>Skills</h3>
               </div>
@@ -293,15 +300,21 @@
       </section>
       <!-- End About section -->
       <!-- Start contact section -->
-      <section id="contact">
-        <div class="container">
-          <h2>Contact me</h2>
-          <p>
-            If you have an application you are interested in developing, a
-            feature that you need built or a project that needs coding. I’d love
-            to help with it!
-          </p>
-          <form action="https://formspree.io/f/myyanyjz" method="POST">
+      <section id="contact" class="flex-row justify-center align-center">
+        <div class="container grid column">
+          <div>
+            <h2>Contact me</h2>
+            <p>
+              If you have an application you are interested in developing, a
+              feature that you need built or a project that needs coding. I’d
+              love to help with it!
+            </p>
+          </div>
+          <form
+            action="https://formspree.io/f/myyanyjz"
+            method="POST"
+            class="flex-column align-center"
+          >
             <input
               type="text"
               maxlength="30"
@@ -322,7 +335,7 @@
               id="textarea"
               cols="0"
               rows="6"
-              placeholder="&nbsp;Your message here..."
+              placeholder="&nbsp;Write your message here..."
               class="contact-input"
               maxlength="500"
               required
