@@ -257,7 +257,7 @@ header .menu-bars:hover {
 
 #portfolio .languages li {
   background-color: #ebebff;
-  color: #6070ff;
+  color: #0018F0;
   padding: 5px 10px;
   border: none;
   border-radius: 8px;
@@ -314,7 +314,7 @@ header .menu-bars:hover {
   font-size: 1.2em;
   font-weight: 700;
   margin: 12px 0;
-  color: #505f79;
+  color: #475A6B;
   transition: 1s;
 }
 
