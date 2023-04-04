@@ -392,7 +392,7 @@ header .menu-bars:hover {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right 0;
-  background-color: #6070ff;
+  background-color: #0017EB;
   border-top-left-radius: 3em;
 }
 
@@ -659,6 +659,10 @@ form textarea {
 
   #portfolio .portfolio-content {
     margin-bottom: 3em;
+  }
+
+  #portfolio p {
+    font-weight: 500;
   }
 
   /* ------------ About Styles ---------- */
