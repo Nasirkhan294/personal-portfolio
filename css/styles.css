@@ -91,6 +91,10 @@ a {
   grid-gap: 2em;
 }
 
+label {
+  display: none;
+}
+
 /* -------------------- Base Header Styles -------------------- */
 
 header {
