@@ -36,7 +36,7 @@ a {
 
 .btn {
   background-color: #fff;
-  color: #396df2;
+  color: #0D45D3;
   padding: 10px 20px;
   border: 1px solid #7f8cff;
   border-radius: 8px;
@@ -89,6 +89,10 @@ a {
 .column {
   grid-template-columns: 100%;
   grid-gap: 2em;
+}
+
+label {
+  display: none;
 }
 
 /* -------------------- Base Header Styles -------------------- */
@@ -257,7 +261,7 @@ header .menu-bars:hover {
 
 #portfolio .languages li {
   background-color: #ebebff;
-  color: #6070ff;
+  color: #0018F0;
   padding: 5px 10px;
   border: none;
   border-radius: 8px;
@@ -314,7 +318,7 @@ header .menu-bars:hover {
   font-size: 1.2em;
   font-weight: 700;
   margin: 12px 0;
-  color: #505f79;
+  color: #475A6B;
   transition: 1s;
 }
 
@@ -392,7 +396,7 @@ header .menu-bars:hover {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right 0;
-  background-color: #6070ff;
+  background-color: #0017EB;
   border-top-left-radius: 3em;
 }
 
@@ -659,6 +663,10 @@ form textarea {
 
   #portfolio .portfolio-content {
     margin-bottom: 3em;
+  }
+
+  #portfolio p {
+    font-weight: 500;
   }
 
   /* ------------ About Styles ---------- */
