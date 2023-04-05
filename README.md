@@ -32,12 +32,10 @@
 
 ## 🛠 Built With <a name="built-with"></a>
 
-<details>
   <ul>
     <li>HTML</li>
     <li>CSS</li>
   </ul>
-</details>
 
 
 <!-- Features -->
@@ -45,11 +43,9 @@
 ### Key Features <a name="key-features"></a>
 
 
-- **[Header-section]**
-- **[Hero-section]**
-- **[Portfolio-section]**
-- **[About-section]**
-- **[Contact-section]**
+- [X] **[Mobile-Responsive]**
+- [X] **[Tablet-Responsive]**
+- [X] **[Desktop-Responsive]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -73,7 +69,7 @@ In order to run this project you need:
 
 
 ```
-   sh
+   ssh code:
    git@github.com:Nasirkhan294/my-personal-portfolio.git
 ```
 
@@ -82,18 +78,25 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 ```
-  sh
-  cd my-folder
+  cd desired-folder
   git clone git@github.com:Nasirkhan294/my-personal-portfolio.git
 ```
 
 ### Deployment
 
-You can deploy this project using:
+You can deploy this project using **Github-Pages**. In order to make your project live on Github, you'll want to push your updated repo by using these commands:
 
 
 ```
-github pages
+git add --all or git add .
+
+```
+```
+git commit -m "your commit message"
+
+```
+```
+git push origin {i.e, your repo name}
 
 ```
 
