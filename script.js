@@ -14,6 +14,6 @@ toggle.onclick = () => {
 };
 
 window.onscroll = () => {
-  toggle.classList.add('fa-bars');
+  toggle.classList.remove('fa-times');
   menu.classList.remove('active');
 };
