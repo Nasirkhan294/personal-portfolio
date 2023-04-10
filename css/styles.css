@@ -117,13 +117,20 @@ header .logo:hover {
   transform: scale(1.3);
 }
 
+header #menu-btn {
+  position: relative;
+  color: #6070ff;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+
 header nav ul {
   display: none;
 }
 
 header nav ul.active {
   display: flex;
-  justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
   position: fixed;
@@ -131,35 +138,22 @@ header nav ul.active {
   right: 0;
   width: 100%;
   height: 100%;
-  padding-top: 3em;
-  padding-left: 2em;
+  padding: 3em 0 0 2em;
   background-color: #6070ff;
   opacity: 0.9;
 }
 
 header nav ul.active li {
   margin-bottom: 2em;
-  transition: top 1s ease;
 }
 
 header nav ul.active li a {
   color: #fff;
   text-transform: capitalize;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 2em;
 }
 
-header #menu-btn {
-  position: relative;
-  color: #6070ff;
-  cursor: pointer;
-  font-size: 2rem;
-}
-
-
-header .menu-btn:hover {
-  color: #2230d2;
-}
 
 
 /* -------------------- Mobile Styles - Homepage -------------------- */
@@ -485,7 +479,7 @@ form textarea {
     width: 20%;
   }
 
-  header .menu-bars {
+  header #menu-btn {
     display: none;
   }
 

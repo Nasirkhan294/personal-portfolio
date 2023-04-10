@@ -12,3 +12,8 @@ toggle.onclick = () => {
     toggle.style.color = '#fff';
   }
 };
+
+window.onscroll = () => {
+  toggle.classList.add('fa-bars');
+  menu.classList.remove('active');
+};
