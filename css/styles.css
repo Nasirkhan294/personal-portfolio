@@ -36,7 +36,7 @@ a {
 
 .btn {
   background-color: #fff;
-  color: #0D45D3;
+  color: #0d45d3;
   padding: 10px 20px;
   border: 1px solid #7f8cff;
   border-radius: 8px;
@@ -104,7 +104,7 @@ header {
 
 header .container {
   justify-content: space-between;
-  margin: 10px;
+  margin-bottom: 1em;
 }
 
 header .logo {
@@ -121,14 +121,43 @@ header nav ul {
   display: none;
 }
 
-header .menu-bars {
+header nav ul.active {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 3em;
+  padding-left: 2em;
+  background-color: #6070ff;
+  opacity: 0.9;
+}
+
+header nav ul.active li {
+  margin-bottom: 2em;
+}
+
+header nav ul.active li a {
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+header #menu-btn {
+  position: relative;
   color: #6070ff;
   cursor: pointer;
 }
 
-header .menu-bars:hover {
+
+header .menu-btn:hover {
   color: #2230d2;
 }
+
 
 /* -------------------- Mobile Styles - Homepage -------------------- */
 /* === Hero Area Styles === */
@@ -261,7 +290,7 @@ header .menu-bars:hover {
 
 #portfolio .languages li {
   background-color: #ebebff;
-  color: #0018F0;
+  color: #0018f0;
   padding: 5px 10px;
   border: none;
   border-radius: 8px;
@@ -318,7 +347,7 @@ header .menu-bars:hover {
   font-size: 1.2em;
   font-weight: 700;
   margin: 12px 0;
-  color: #475A6B;
+  color: #475a6b;
   transition: 1s;
 }
 
@@ -362,7 +391,7 @@ header .menu-bars:hover {
 }
 
 .language-name:hover {
-  transform: translateY(-1em)
+  transform: translateY(-1em);
 }
 
 .language-name i {
@@ -396,7 +425,7 @@ header .menu-bars:hover {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right 0;
-  background-color: #0017EB;
+  background-color: #0017eb;
   border-top-left-radius: 3em;
 }
 
@@ -445,6 +474,9 @@ form textarea {
   }
 
   /* ------------ Header Styles ---------- */
+  header {
+    padding-top: 2em;
+  }
 
   header .logo-wrapper {
     width: 20%;
@@ -477,7 +509,7 @@ form textarea {
   header nav ul li a:hover {
     color: #6070ff;
     border-bottom: 2px solid #6070ff;
-    padding-bottom: .5em;
+    padding-bottom: 0.5em;
   }
 
   /* ------------ Hero Area Styles ---------- */
