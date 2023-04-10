@@ -16,4 +16,5 @@ toggle.onclick = () => {
 window.onscroll = () => {
   toggle.classList.remove('fa-times');
   menu.classList.remove('active');
+  toggle.style.color = '#6070ff';
 };
