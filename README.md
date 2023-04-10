@@ -28,6 +28,8 @@
 
 # 📖 Personal Portfolio <a name="about-project"></a>
 
+![Portfolio-image]("/images/p-img.png")
+
 **Personal Portfolio:** The Personal Portfolio project served as a platform for me to demonstrate my technical proficiency and present my projects in a compelling manner to potential employers.
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -35,6 +37,7 @@
   <ul>
     <li>HTML</li>
     <li>CSS</li>
+    <li>JavaScript</li>
   </ul>
 
 
@@ -43,9 +46,9 @@
 ### Key Features <a name="key-features"></a>
 
 
-- [X] **[Mobile-Responsive]**
-- [X] **[Tablet-Responsive]**
-- [X] **[Desktop-Responsive]**
+- [X] **Mobile Responsive**
+- [X] **Tablet Responsive**
+- [X] **Desktop Responsive**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -118,9 +121,9 @@ git push origin {i.e, your repo name}
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [X] **[Updated-HTML]**
-- [X] **[Modified-CSS-Style]**
-- [ ] **[JavaScript-Interactivity]**
+- [X] **Portfolio Details Pop-up**
+- [X] **Validated Contact Form**
+- [X] **Local Storage of the Browser**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
