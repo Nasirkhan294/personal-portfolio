@@ -25,7 +25,6 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    
   </head>
   <body>
     <!-- Start header section -->
@@ -45,8 +44,7 @@
             <li><a href="#contact">contact</a></li>
           </ul>
 
-          <div id="menu-btn" class="fas fa-bars" >
-          </div>
+          <div id="menu-btn" class="fas fa-bars"></div>
         </nav>
         <!-- End menu section -->
       </div>
@@ -114,7 +112,10 @@
         <div class="container grid column">
           <div class="portfolio-card grid">
             <div class="portfolio-thumbnail">
-              <img src="images/work1.jpg" alt="A photo contain mobile, pens and cards" />
+              <img
+                src="images/work1.jpg"
+                alt="A photo contain mobile, pens and cards"
+              />
             </div>
             <div class="portfolio-content flex-column">
               <h2>Tonic</h2>
@@ -137,7 +138,10 @@
           </div>
           <div class="portfolio-card grid">
             <div class="portfolio-thumbnail">
-              <img src="images/work2.jpg" alt="A photo contain keyboard, mobile, pen and notebooks" />
+              <img
+                src="images/work2.jpg"
+                alt="A photo contain keyboard, mobile, pen and notebooks"
+              />
             </div>
             <div class="portfolio-content">
               <h2>Multi Post Stories</h2>
@@ -185,7 +189,10 @@
           </div>
           <div class="portfolio-card grid">
             <div class="portfolio-thumbnail">
-              <img src="images/work4.jpg" alt="Laptop along with accessories on the table" />
+              <img
+                src="images/work4.jpg"
+                alt="Laptop along with accessories on the table"
+              />
             </div>
             <div class="portfolio-content">
               <h2>Uber Navigation</h2>
@@ -314,8 +321,9 @@
             action="https://formspree.io/f/myyanyjz"
             method="POST"
             class="flex-column align-center"
+            id="contact-form"
           >
-          <label for="name">Full name</label>
+            <label for="name">Full name</label>
             <input
               type="text"
               maxlength="30"
@@ -344,6 +352,9 @@
               required
             ></textarea>
             <input type="submit" class="btn" value="Get in touch" />
+            <span id="error-msg">
+              Email should be in lowercase
+            </span>
           </form>
         </div>
       </section>

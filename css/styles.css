@@ -456,6 +456,12 @@ form textarea {
   color: #b3bac5 !important;
 }
 
+#error-msg {
+  display: none;
+  color: red;
+  margin-top: 1em;
+}
+
 #contact .btn {
   align-self: flex-start;
   box-shadow: 0.4em 0.4em 1em #2230d2;
