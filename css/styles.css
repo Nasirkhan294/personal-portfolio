@@ -37,9 +37,9 @@ a {
 .btn {
   background-color: #fff;
   color: #0d45d3;
-  padding: 10px 20px;
+  padding: 0.625em 0;
   border: 1px solid #7f8cff;
-  border-radius: 8px;
+  border-radius: 0.5em;
   cursor: pointer;
   font-size: 1em;
   width: 53%;
@@ -296,6 +296,120 @@ header nav ul.active li a {
 #portfolio .languages li:nth-of-type(2) {
   margin: 0 1em;
 }
+
+
+/* === Portfolio Pop-up Style === */
+.popup-card {
+  grid-template-columns: 100%;
+  grid-gap: 1em;
+  background-color: #fff;
+  padding: 1em;
+  border: 1px solid #dfe1e6;
+  border-radius: 1.5em;
+  align-items: center;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.fa-times {
+  color: #67798E;
+  font-size: 1.5em;
+}
+
+.popup-body-thumbnail {
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+
+.popup-body-thumbnail img {
+  width: 100%;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.popup-body-thumbnail img:hover {
+  transform: scale(1.1);
+}
+
+.popup-list-items {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: .5em 0;
+  list-style-type: circle;
+}
+
+.popup-list-items li {
+  font-size: 0.8em;
+  font-weight: 500;
+  color: #6b778c;
+}
+
+.popup-list-items li:nth-of-type(1) {
+  color: #344563;
+  font-size: 1em;
+  font-weight: 700;
+  list-style: none;
+  margin: 0;
+  margin-right: 0.5em;
+}
+
+.popup-list-items li:nth-of-type(2) {
+  margin: 0 1.3em;
+}
+
+.popup-list-items li:nth-of-type(3) {
+  margin-left: 0.5em;
+}
+
+.popup-title {
+  color: #172b4d;
+}
+
+.popup-description {
+  margin-top: .5em;
+}
+
+.popup-languages {
+  display: flex;
+  align-items: center;
+  margin: 1em 0;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #EBECF0;
+}
+
+.popup-languages li {
+  background-color: #ebebff;
+  color: #0018f0;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 8px;
+}
+
+.popup-languages li:nth-of-type(2) {
+  margin: 0 1em;
+}
+
+.popup-btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup-btn {
+  font-size: .7em;
+  width: 45%;
+}
+
+.popup-btn i {
+  margin-left: 0.5em;
+}
+
+
 
 /* === About Style === */
 #about {
@@ -567,6 +681,56 @@ form textarea {
     font-size: 0.9em;
   }
 
+   /* ------------ Portfolio popup Styles ---------- */
+
+   .popup-card {
+    padding-bottom: 2em;
+  }
+
+  .popup-thumbnail img {
+    min-height: 85vh;
+  }
+
+  .popup-list-items li {
+    font-size: 1.125em;
+  }
+
+  .popup-title {
+    font-size: 1.5em;
+    color: #091e42;
+  }
+
+  .popup-description {
+    font-size: 0.9em;
+    flex-basis: 60%;
+  }
+
+  .popup-list-items {
+    font-size: 0.9em;
+    margin-bottom: 1em;
+  }
+
+  .popup-body-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .popup-footer {
+    flex-basis: 40%;
+  }
+
+  .popup-languages {
+    justify-content: center;
+  }
+
+  .popup-btn-wrapper {
+    justify-content: space-around;
+  }
+
+  .popup-btn {
+    width: 43%;
+  }
+
   /* ------------ About Styles ---------- */
 
   #about .container {
@@ -696,6 +860,29 @@ form textarea {
 
   #portfolio p {
     font-weight: 500;
+  }
+
+   /* ------------ Portfolio popup Styles ---------- */
+   .popup-card {
+    margin: 3em;
+    max-width: 75%;
+    margin: 0 12em;
+  }
+
+  .popup-body-content {
+    margin-top: 2em;
+  }
+
+  .popup-body-thumbnail img {
+    max-height: 80vh;
+  }
+
+  .popup-btn-wrapper {
+    justify-content: space-evenly;
+  }
+
+  .popup-btn {
+    width: 35%;
   }
 
   /* ------------ About Styles ---------- */
