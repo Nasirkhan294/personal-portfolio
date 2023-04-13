@@ -56,87 +56,48 @@ const projects = [
 
 const portfolioSection = document.getElementById('portfolio');
 const portfolioContainer = portfolioSection.querySelector('.container');
+const popupCard = document.querySelector('.popup-card');
+const closePopup = document.querySelector('.fa-times');
 
-function showPopup(project) {
-  const card = document.createElement('div');
-  card.classList.add('popup-card');
+const showPopup = (project) => {
+  const title = popupCard.querySelector('.popup-title');
+  const description = popupCard.querySelector('.popup-description');
+  const image = popupCard.querySelector('img');
+  const button1 = popupCard.querySelector('.popup-btn:nth-of-type(1)');
+  const button2 = popupCard.querySelector('.popup-btn:nth-of-type(2)');
+  const listItems = popupCard.querySelector('.popup-list-items');
+  const technologies = popupCard.querySelector('.popup-languages');
 
-  const popupHeader = document.createElement('div');
-  popupHeader.classList.add('popup-header');
+  title.innerHTML = project.name;
+  description.textContent = project.popupDescription;
+  image.src = project.image;
+  image.alt = project.alt;
 
-  const closePopup = document.createElement('div');
-  closePopup.classList.add('fas', 'fa-times');
-  popupHeader.appendChild(closePopup);
+  button1.innerHTML = project.popupBtn1;
+  button2.innerHTML = project.popupBtn2;
 
-  const title = document.createElement('h2');
-  title.classList.add('popup-title');
-  title.textContent = project.name;
-
-  const listItems = document.createElement('ul');
-  listItems.classList.add('popup-list-items');
-
+  listItems.innerHTML = '';
   project.listItems.forEach((item) => {
     const li = document.createElement('li');
     li.textContent = item;
     listItems.appendChild(li);
   });
 
-  const popupHeaderContent = document.createElement('div');
-  popupHeaderContent.appendChild(title);
-  popupHeaderContent.appendChild(listItems);
-  popupHeader.appendChild(popupHeaderContent);
-
-  // Create the thumbnail image element
-  const thumbnail = document.createElement('div');
-  thumbnail.classList.add('popup-body-thumbnail');
-  const image = document.createElement('img');
-  image.src = project.image;
-  image.alt = project.alt;
-  thumbnail.appendChild(image);
-
-  const description = document.createElement('p');
-  description.classList.add('popup-description');
-  description.textContent = project.popupDescription;
-
-  const languages = document.createElement('ul');
-  languages.classList.add('popup-languages');
+  technologies.innerHTML = '';
   project.technologies.forEach((tech) => {
-    const techItem = document.createElement('li');
-    techItem.textContent = tech;
-    languages.appendChild(techItem);
+    const li = document.createElement('li');
+    li.textContent = tech;
+    technologies.appendChild(li);
   });
 
-  const popupBtn1 = document.createElement('button');
-  popupBtn1.classList.add('btn', 'popup-btn');
-  popupBtn1.innerHTML = project.popupBtn1;
-  const popupBtn2 = document.createElement('button');
-  popupBtn2.classList.add('btn', 'popup-btn');
-  popupBtn2.innerHTML = project.popupBtn2;
-  popupBtn2.href = project.popupBtn2Link;
+  popupCard.style.display = 'grid';
+};
 
-  const buttons = document.createElement('div');
-  buttons.classList.add('popup-btn-wrapper');
-  buttons.appendChild(popupBtn1);
-  buttons.appendChild(popupBtn2);
+closePopup.onclick = () => {
+  popupCard.style.display = 'none';
+};
 
-  const popupFooter = document.createElement('div');
-  popupFooter.classList.add('popup-footer', 'flex-column');
-  popupFooter.appendChild(languages);
-  popupFooter.appendChild(buttons);
-
-  const popupContent = document.createElement('div');
-  popupContent.classList.add('popup-body-content');
-  popupContent.appendChild(description);
-  popupContent.appendChild(popupFooter);
-
-  card.appendChild(popupHeader);
-  card.appendChild(thumbnail);
-  card.appendChild(popupContent);
-
-  portfolioSection.appendChild(card);
-}
-
-function createPortfolioItem(project) {
+function loadProject(project) {
   // Create a new portfolio card element
   const card = document.createElement('div');
   card.classList.add('portfolio-card', 'grid');
@@ -196,7 +157,14 @@ function createPortfolioItem(project) {
   return card;
 }
 
-projects.forEach((project) => {
-  const portfolioItem = createPortfolioItem(project);
-  portfolioContainer.appendChild(portfolioItem);
+const loadProjects = () => {
+  const Container = portfolioContainer;
+  for (let i = 0; i < projects.length; i += 1) {
+    const project = loadProject(projects[i]);
+    Container.appendChild(project);
+  }
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+  loadProjects();
 });

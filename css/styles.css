@@ -253,6 +253,7 @@ header nav ul.active li a {
 }
 
 #portfolio .portfolio-card {
+  display: grid;
   grid-template-columns: 100%;
   grid-gap: 1em;
   background-color: #fff;
@@ -260,6 +261,7 @@ header nav ul.active li a {
   border: 1px solid #dfe1e6;
   border-radius: 1.5em;
   align-items: center;
+  margin-bottom: 2em;
 }
 
 #portfolio .portfolio-thumbnail {
@@ -366,13 +368,21 @@ header nav ul.active li a {
 
 /* === Portfolio Pop-up Style === */
 .popup-card {
+  display: none;
   grid-template-columns: 100%;
-  grid-gap: 1em;
+  grid-gap: .5em;
   background-color: #fff;
   padding: 1em;
   border: 1px solid #dfe1e6;
   border-radius: 1.5em;
   align-items: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 90vh;
 }
 
 .popup-header {
@@ -691,10 +701,6 @@ form textarea {
 
   /* ------------ Portfolio popup Styles ---------- */
 
-  .popup-card {
-    padding-bottom: 2em;
-  }
-
   .popup-title {
     font-size: 1.5em;
     color: #091e42;
@@ -702,7 +708,7 @@ form textarea {
 
   .popup-description {
     font-size: 0.9em;
-    flex-basis: 60%;
+    flex-basis: 57%;
   }
 
   .popup-list-items {
