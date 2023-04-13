@@ -212,8 +212,6 @@ function createPortfolioItem(project) {
   // show the popup window
   seeProjectButton.addEventListener('click', () => {
     showPopup(project);
-    portfolioContainer.style.display = 'none';
-    
   });
 
   return card;

@@ -1,5 +1,4 @@
 /* ====================== Global Styles  ========================== */
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -96,7 +95,6 @@ label {
 }
 
 /* -------------------- Base Header Styles -------------------- */
-
 header {
   background-color: #fff;
   padding: 15px 0;
@@ -140,6 +138,20 @@ header nav ul.active {
   padding: 3em 0 0 2em;
   background-color: #6070ff;
   opacity: 0.9;
+}
+
+.popup-languages li {
+  background-color: #ebebff;
+  color: #0018f0;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 8px;
+}
+
+.popup-list-items li {
+  font-size: 0.8em;
+  font-weight: 500;
+  color: #6b778c;
 }
 
 header nav ul.active li {
@@ -207,6 +219,10 @@ header nav ul.active li a {
   align-self: flex-start;
 }
 
+.popup-btn i {
+  margin-left: 0.5em;
+}
+
 .hero-social ul i {
   font-size: 1.2em;
   font-weight: 700;
@@ -215,7 +231,6 @@ header nav ul.active li a {
   transition: 1s;
 }
 
-/* about  icon */
 .about-social ul i {
   font-size: 1.2em;
   font-weight: 700;
@@ -254,6 +269,22 @@ header nav ul.active li a {
   overflow: hidden;
 }
 
+.popup-body-thumbnail {
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+
+.popup-body-thumbnail img {
+  width: 100%;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.popup-body-thumbnail img:hover {
+  transform: scale(1.1);
+}
+
 #portfolio .portfolio-thumbnail img {
   width: 100%;
   border-radius: 0.5em;
@@ -269,6 +300,27 @@ header nav ul.active li a {
   justify-content: flex-start;
   margin: 1em 0;
   list-style-type: circle;
+}
+
+.popup-list-items li:nth-of-type(1) {
+  color: #344563;
+  font-size: 1em;
+  font-weight: 700;
+  list-style: none;
+  margin: 0;
+  margin-right: 0.5em;
+}
+
+.popup-list-items li:nth-of-type(2) {
+  margin: 0 1.2em;
+}
+
+.popup-list-items li:nth-of-type(3) {
+  margin-left: 0.5em;
+}
+
+.popup-languages li:nth-of-type(2) {
+  margin: 0 1em;
 }
 
 #portfolio .list-items li {
@@ -314,7 +366,6 @@ header nav ul.active li a {
   margin: 0 1em;
 }
 
-
 /* === Portfolio Pop-up Style === */
 .popup-card {
   grid-template-columns: 100%;
@@ -333,55 +384,16 @@ header nav ul.active li a {
 }
 
 .fa-times {
-  color: #67798E;
+  color: #67798e;
   font-size: 1.5em;
-}
-
-.popup-body-thumbnail {
-  border-radius: 0.5em;
-  overflow: hidden;
-}
-
-.popup-body-thumbnail img {
-  width: 100%;
-  border-radius: 0.5em;
-  cursor: pointer;
-  transition: 1s;
-}
-
-.popup-body-thumbnail img:hover {
-  transform: scale(1.1);
 }
 
 .popup-list-items {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin: .5em 0;
+  margin: 0.5em 0;
   list-style-type: circle;
-}
-
-.popup-list-items li {
-  font-size: 0.8em;
-  font-weight: 500;
-  color: #6b778c;
-}
-
-.popup-list-items li:nth-of-type(1) {
-  color: #344563;
-  font-size: 1em;
-  font-weight: 700;
-  list-style: none;
-  margin: 0;
-  margin-right: 0.5em;
-}
-
-.popup-list-items li:nth-of-type(2) {
-  margin: 0 1.3em;
-}
-
-.popup-list-items li:nth-of-type(3) {
-  margin-left: 0.5em;
 }
 
 .popup-title {
@@ -389,7 +401,7 @@ header nav ul.active li a {
 }
 
 .popup-description {
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
 
 .popup-languages {
@@ -397,19 +409,7 @@ header nav ul.active li a {
   align-items: center;
   margin: 1em 0;
   padding-bottom: 1em;
-  border-bottom: 1px solid #EBECF0;
-}
-
-.popup-languages li {
-  background-color: #ebebff;
-  color: #0018f0;
-  padding: 5px 10px;
-  border: none;
-  border-radius: 8px;
-}
-
-.popup-languages li:nth-of-type(2) {
-  margin: 0 1em;
+  border-bottom: 1px solid #ebecf0;
 }
 
 .popup-btn-wrapper {
@@ -418,15 +418,9 @@ header nav ul.active li a {
 }
 
 .popup-btn {
-  font-size: .7em;
+  font-size: 0.7em;
   width: 45%;
 }
-
-.popup-btn i {
-  margin-left: 0.5em;
-}
-
-
 
 /* === About Style === */
 
@@ -671,8 +665,16 @@ form textarea {
     direction: ltr;
   }
 
+  .popup-thumbnail img {
+    min-height: 85vh;
+  }
+
   #portfolio .portfolio-thumbnail img {
     min-height: 85vh;
+  }
+
+  .popup-list-items li {
+    font-size: 1.125em;
   }
 
   #portfolio .list-items li {
@@ -697,18 +699,10 @@ form textarea {
     font-size: 0.9em;
   }
 
-   /* ------------ Portfolio popup Styles ---------- */
+  /* ------------ Portfolio popup Styles ---------- */
 
-   .popup-card {
+  .popup-card {
     padding-bottom: 2em;
-  }
-
-  .popup-thumbnail img {
-    min-height: 85vh;
-  }
-
-  .popup-list-items li {
-    font-size: 1.125em;
   }
 
   .popup-title {
@@ -748,7 +742,6 @@ form textarea {
   }
 
   /* ------------ About Styles ---------- */
-
   #about .container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -864,6 +857,11 @@ form textarea {
   }
 
   /* ------------ Portfolio Styles ---------- */
+
+  .popup-body-thumbnail img {
+    max-height: 80vh;
+  }
+
   #portfolio .portfolio-thumbnail img {
     min-height: 50vh;
   }
@@ -876,19 +874,15 @@ form textarea {
     font-weight: 500;
   }
 
-   /* ------------ Portfolio popup Styles ---------- */
-   .popup-card {
+  /* ------------ Portfolio popup Styles ---------- */
+
+  .popup-card {
     margin: 3em;
     max-width: 75%;
-    margin: 0 12em;
   }
 
   .popup-body-content {
     margin-top: 2em;
-  }
-
-  .popup-body-thumbnail img {
-    max-height: 80vh;
   }
 
   .popup-btn-wrapper {
