@@ -111,8 +111,8 @@ git push origin {i.e, your repo name}
 
 👤 **Nasirkhan294**
 
-- GitHub: [@githubhandle](https://github.com/Nasirkhan294)
-- Twitter: [@twitterhandle](https://twitter.com/NasirMa35888225)
+- GitHub: [Github](https://github.com/Nasirkhan294)
+- Twitter: [Twitter](https://twitter.com/NasirMa35888225)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/nasirmahd-8a8/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -121,9 +121,9 @@ git push origin {i.e, your repo name}
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [X] **Portfolio Details Pop-up**
-- [X] **Validated Contact Form**
-- [X] **Local Storage of the Browser**
+- [ ] **Portfolio Details Pop-up**
+- [ ] **Validated Contact Form**
+- [ ] **Local Storage of the Browser**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
