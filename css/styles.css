@@ -124,7 +124,6 @@ header #menu-btn {
   cursor: pointer;
 }
 
-
 header nav ul {
   display: none;
 }
@@ -154,10 +153,10 @@ header nav ul.active li a {
   font-size: 2em;
 }
 
-
-
 /* -------------------- Mobile Styles - Homepage -------------------- */
+
 /* === Hero Area Styles === */
+
 .hero-area {
   background-image: url(../images/hero-img.png);
   background-size: contain;
@@ -214,6 +213,7 @@ header nav ul.active li a {
 }
 
 /* === Portfolio Styles === */
+
 #portfolio {
   background-color: #e5e5e5;
 }
@@ -298,6 +298,7 @@ header nav ul.active li a {
 }
 
 /* === About Style === */
+
 #about {
   background-color: #fff;
   border-top-right-radius: 3em;
