@@ -124,7 +124,6 @@ header #menu-btn {
   cursor: pointer;
 }
 
-
 header nav ul {
   display: none;
 }
@@ -154,10 +153,10 @@ header nav ul.active li a {
   font-size: 2em;
 }
 
-
-
 /* -------------------- Mobile Styles - Homepage -------------------- */
+
 /* === Hero Area Styles === */
+
 .hero-area {
   background-image: url(../images/hero-img.png);
   background-size: contain;
@@ -200,11 +199,28 @@ header nav ul.active li a {
   width: 60%;
 }
 
+.language-name i {
+  font-size: 2em;
+  padding: 0.325em;
+  border: none;
+  border-radius: 50%;
+  align-self: flex-start;
+}
+
 .hero-social ul i {
   font-size: 1.2em;
   font-weight: 700;
   margin: 12px 0;
   color: #505f79;
+  transition: 1s;
+}
+
+/* about  icon */
+.about-social ul i {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 12px 0;
+  color: #475a6b;
   transition: 1s;
 }
 
@@ -214,6 +230,7 @@ header nav ul.active li a {
 }
 
 /* === Portfolio Styles === */
+
 #portfolio {
   background-color: #e5e5e5;
 }
@@ -260,6 +277,14 @@ header nav ul.active li a {
   color: #6b778c;
 }
 
+#portfolio .languages li {
+  background-color: #ebebff;
+  color: #0018f0;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 8px;
+}
+
 #portfolio .list-items li:nth-of-type(1) {
   color: #344563;
   font-size: 1em;
@@ -285,19 +310,12 @@ header nav ul.active li a {
   margin: 1.5em 0;
 }
 
-#portfolio .languages li {
-  background-color: #ebebff;
-  color: #0018f0;
-  padding: 5px 10px;
-  border: none;
-  border-radius: 8px;
-}
-
 #portfolio .languages li:nth-of-type(2) {
   margin: 0 1em;
 }
 
 /* === About Style === */
+
 #about {
   background-color: #fff;
   border-top-right-radius: 3em;
@@ -320,7 +338,7 @@ header nav ul.active li a {
 #about h3 {
   font-size: 1.25em;
   font-weight: normal;
-  color: #000000;
+  color: #000;
 }
 
 .about-social {
@@ -338,14 +356,6 @@ header nav ul.active li a {
   justify-content: space-between;
   width: 55%;
   margin: 0.625em 0;
-}
-
-.about-social ul i {
-  font-size: 1.2em;
-  font-weight: 700;
-  margin: 12px 0;
-  color: #475a6b;
-  transition: 1s;
 }
 
 .about-social ul i:hover {
@@ -391,19 +401,12 @@ header nav ul.active li a {
   transform: translateY(-1em);
 }
 
-.language-name i {
-  font-size: 2em;
-  padding: 0.325em;
-  border: none;
-  border-radius: 50%;
-  align-self: flex-start;
-}
 .language-name p {
   margin-left: 1em;
 }
 
 .language-name .javascript {
-  background-color: #ffff00;
+  background-color: #ff0;
 }
 
 .language-name .html {
@@ -412,7 +415,7 @@ header nav ul.active li a {
 }
 
 .language-name .css {
-  background-color: #00ffff;
+  background-color: #0ff;
   color: #fff;
 }
 
@@ -454,6 +457,12 @@ header nav ul.active li a {
 
 form textarea {
   color: #b3bac5 !important;
+}
+
+#error-msg {
+  display: none;
+  color: red;
+  margin-top: 1em;
 }
 
 #contact .btn {
@@ -510,6 +519,7 @@ form textarea {
   }
 
   /* ------------ Hero Area Styles ---------- */
+
   .hero-area {
     background-image: url(../images/hero-bg.png);
   }
@@ -521,6 +531,7 @@ form textarea {
   .hero-main-content {
     max-width: 500px;
   }
+
   .hero-social {
     max-width: 500px;
   }
@@ -557,6 +568,11 @@ form textarea {
   #portfolio h2 {
     font-size: 1.5em;
     color: #091e42;
+  }
+
+  .language-name p {
+    margin-top: 1em;
+    margin-left: 0;
   }
 
   #portfolio p {
@@ -599,13 +615,10 @@ form textarea {
     margin: 0 0.5em;
   }
 
-  .language-name p {
-    margin-top: 1em;
-    margin-left: 0;
-  }
   .language-name i {
     align-self: center;
   }
+
   /* ------------ Contact Styles ---------- */
 
   #contact {
@@ -640,6 +653,7 @@ form textarea {
 }
 
 /* ========== Desktop Styles ========== */
+
 @media only screen and (min-width: 1200px) {
   /* ------------ General Styles ---------- */
   .container {
@@ -703,9 +717,11 @@ form textarea {
     width: 38%;
     margin: 1em 0;
   }
+
   #about .btn {
     width: 35%;
   }
+
   /* ------------ Contact Styles ---------- */
   #contact .container {
     max-width: 400px;
