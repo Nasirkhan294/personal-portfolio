@@ -97,19 +97,19 @@ You can deploy this project using **Github-Pages**. In order to make your projec
 git add --all or git add .
 
 ```
+
 ```
 git commit -m "your commit message"
+
+```
 
 ```
 git add --all or git add .
 
 ```
-```
-git commit -m "your commit message"
 
 ```
-```
-git push origin {i.e, your repo name}
+git commit -m "your commit message"
 
 ```
 
