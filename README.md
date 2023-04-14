@@ -45,7 +45,6 @@
 
 ### Key Features <a name="key-features"></a>
 
-
 - [X] **Mobile Responsive**
 - [X] **Tablet Responsive**
 - [X] **Desktop Responsive**
@@ -53,9 +52,6 @@
 - [X] **Portfolio Details Pop-up**
 - [X] **Validated Contact Form**
 - [X] **Local Storage of the Browser**
-
- 
- 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -96,6 +92,13 @@ Clone this repository to your desired folder:
 
 You can deploy this project using **Github-Pages**. In order to make your project live on Github, you'll want to push your updated repo by using these commands:
 
+
+```
+git add --all or git add .
+
+```
+```
+git commit -m "your commit message"
 
 ```
 git add --all or git add .
