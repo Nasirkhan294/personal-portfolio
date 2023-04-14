@@ -210,18 +210,6 @@ header nav ul.active li a {
   width: 60%;
 }
 
-.language-name i {
-  font-size: 2em;
-  padding: 0.325em;
-  border: none;
-  border-radius: 50%;
-  align-self: flex-start;
-}
-
-.popup-btn i {
-  margin-left: 0.5em;
-}
-
 .hero-social ul i {
   font-size: 1.2em;
   font-weight: 700;
@@ -370,7 +358,7 @@ header nav ul.active li a {
 .popup-card {
   display: none;
   grid-template-columns: 100%;
-  grid-gap: .5em;
+  grid-gap: 0.5em;
   background-color: #fff;
   padding: 1em;
   border: 1px solid #dfe1e6;
@@ -700,6 +688,10 @@ form textarea {
   }
 
   /* ------------ Portfolio popup Styles ---------- */
+
+  .popup-card {
+    padding-bottom: 2em;
+  }
 
   .popup-title {
     font-size: 1.5em;
