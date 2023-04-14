@@ -1,3 +1,19 @@
+/* --------------------- Menu toggle Details ---------------------- */
+const toggle = document.querySelector('#menu-btn');
+const toggleMenu = document.querySelector('ul');
+
+toggle.onclick = () => {
+  toggle.classList.toggle('fa-times');
+  toggle.classList.toggle('active');
+  toggleMenu.classList.toggle('active');
+};
+
+window.onscroll = () => {
+  toggle.classList.remove('fa-times');
+  toggle.classList.remove('active');
+  toggleMenu.classList.remove('active');
+};
+
 /* --------------------- Portfolio Item Details ---------------------- */
 const projects = [
   {
@@ -167,4 +183,80 @@ const loadProjects = () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   loadProjects();
+});
+
+/* --------------------- Form Validation Details ---------------------- */
+const contactForm = document.getElementById('contact-form');
+const errorMsg = document.getElementById('error-msg');
+// Get all the input fields
+const nameInput = document.querySelector('input[name="name"]');
+const emailInput = document.querySelector('input[name="email"]');
+const messageInput = document.querySelector('textarea[name="message"]');
+
+// Check if the email input is lowercase
+function isEmailLowercase() {
+  const email = emailInput.value;
+  return email === email.toLowerCase();
+}
+
+function handleFormSubmit(event) {
+  event.preventDefault();
+
+  if (!isEmailLowercase()) {
+    errorMsg.style.display = 'block';
+    return;
+  }
+
+  contactForm.submit();
+  contactForm.reset();
+}
+
+contactForm.addEventListener('submit', handleFormSubmit);
+
+/* --------------------- Browser Local Storage Details ---------------------- */
+
+// Create a JavaScript object to store the form data
+const formData = {
+  name: '',
+  email: '',
+  message: '',
+};
+
+// Check if there is any saved data in local storage
+if (localStorage.getItem('formData')) {
+  // Parse the saved data and update the form data object
+  const savedFormData = JSON.parse(localStorage.getItem('formData'));
+  formData.name = savedFormData.name;
+  formData.email = savedFormData.email;
+  formData.message = savedFormData.message;
+
+  // Pre-fill the input fields with the saved data
+  nameInput.value = formData.name;
+  emailInput.value = formData.email;
+  messageInput.value = formData.message;
+}
+
+// Add event listeners to the input fields
+nameInput.addEventListener('input', (event) => {
+  // Update the form data object with the new value
+  formData.name = event.target.value;
+
+  // Save the updated form data to local storage
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
+
+emailInput.addEventListener('input', (event) => {
+  // Update the form data object with the new value
+  formData.email = event.target.value;
+
+  // Save the updated form data to local storage
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
+
+messageInput.addEventListener('input', (event) => {
+  // Update the form data object with the new value
+  formData.message = event.target.value;
+
+  // Save the updated form data to local storage
+  localStorage.setItem('formData', JSON.stringify(formData));
 });

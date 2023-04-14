@@ -122,6 +122,10 @@ header #menu-btn {
   cursor: pointer;
 }
 
+header #menu-btn.active {
+  color: #fff;
+}
+
 header nav ul {
   display: none;
 }
@@ -509,6 +513,14 @@ header nav ul.active li a {
   transform: translateY(-1em);
 }
 
+.language-name i {
+  font-size: 2em;
+  padding: 0.325em;
+  border: none;
+  border-radius: 50%;
+  align-self: flex-start;
+}
+
 .language-name p {
   margin-left: 1em;
 }
@@ -570,6 +582,12 @@ form textarea {
 #contact .btn {
   align-self: flex-start;
   box-shadow: 0.4em 0.4em 1em #2230d2;
+}
+
+#error-msg {
+  display: none;
+  color: #f00;
+  margin-top: 1em;
 }
 
 /* -------------------- Break Points for Tablet & Desktop Layout -------------------- */

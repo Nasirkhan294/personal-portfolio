@@ -49,6 +49,13 @@
 - [X] **Mobile Responsive**
 - [X] **Tablet Responsive**
 - [X] **Desktop Responsive**
+- [X] **Mobile Toggle Menu**
+- [X] **Portfolio Details Pop-up**
+- [X] **Validated Contact Form**
+- [X] **Local Storage of the Browser**
+
+ 
+ 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -56,7 +63,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://nasirkhan294.github.io/my-personal-portfolio/)
+- [Live Project Demo](https://nasirkhan294.github.io/my-personal-portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -121,9 +128,8 @@ git push origin {i.e, your repo name}
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Portfolio Details Pop-up**
-- [ ] **Validated Contact Form**
-- [ ] **Local Storage of the Browser**
+- [ ] **FIRST CAPSTONE PROJECT**
+- [ ] **Coming Up Soon**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
