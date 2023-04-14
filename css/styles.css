@@ -214,6 +214,14 @@ header nav ul.active li a {
   width: 60%;
 }
 
+.language-name i {
+  font-size: 2em;
+  padding: 0.325em;
+  border: none;
+  border-radius: 50%;
+  align-self: flex-start;
+}
+
 .hero-social ul i {
   font-size: 1.2em;
   font-weight: 700;
@@ -511,14 +519,6 @@ header nav ul.active li a {
 
 .language-name:hover {
   transform: translateY(-1em);
-}
-
-.language-name i {
-  font-size: 2em;
-  padding: 0.325em;
-  border: none;
-  border-radius: 50%;
-  align-self: flex-start;
 }
 
 .language-name p {
