@@ -88,6 +88,6 @@ messageInput.addEventListener('input', (event) => {
   // Update the form data object with the new value
   formData.message = event.target.value;
 
-  // Save the updated form data to local storage
+  // Save the updated form data to the local storage
   localStorage.setItem('formData', JSON.stringify(formData));
 });
