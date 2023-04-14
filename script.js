@@ -90,11 +90,11 @@ const showPopup = (project) => {
     technologies.appendChild(li);
   });
 
-  popupCard.style.display = 'grid';
+  popupCard.classList.add('open');
 };
 
 closePopup.onclick = () => {
-  popupCard.style.display = 'none';
+  popupCard.classList.remove('open');
 };
 
 function loadProject(project) {

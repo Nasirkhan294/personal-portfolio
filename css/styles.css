@@ -260,6 +260,7 @@ header nav ul.active li a {
 .popup-body-thumbnail {
   border-radius: 0.5em;
   overflow: hidden;
+  min-height: 48vh;
 }
 
 .popup-body-thumbnail img {
@@ -370,6 +371,11 @@ header nav ul.active li a {
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.popup-card.open {
+  display: grid;
+  overflow-y: auto;
 }
 
 .popup-header {
@@ -652,8 +658,8 @@ form textarea {
     direction: ltr;
   }
 
-  .popup-thumbnail img {
-    min-height: 85vh;
+  .popup-body-thumbnail img {
+    max-height: 50vh;
   }
 
   #portfolio .portfolio-thumbnail img {
@@ -689,6 +695,8 @@ form textarea {
   /* ------------ Portfolio popup Styles ---------- */
 
   .popup-card {
+    margin: 3em;
+    max-width: 90%;
     padding-bottom: 2em;
   }
 
@@ -845,7 +853,7 @@ form textarea {
   /* ------------ Portfolio Styles ---------- */
 
   .popup-body-thumbnail img {
-    max-height: 80vh;
+    max-height: 60vh;
   }
 
   #portfolio .portfolio-thumbnail img {
@@ -863,8 +871,9 @@ form textarea {
   /* ------------ Portfolio popup Styles ---------- */
 
   .popup-card {
-    margin: 3em;
-    max-width: 75%;
+    max-width: 70%;
+    top: -2em;
+    left: 10em;
   }
 
   .popup-body-content {
