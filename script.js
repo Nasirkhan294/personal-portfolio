@@ -53,7 +53,7 @@ const formData = {
   message: '',
 };
 
-// Check if there is any saved data in local storage
+// Check saved data in local storage
 if (localStorage.getItem('formData')) {
   // Parse the saved data and update the form data object
   const savedFormData = JSON.parse(localStorage.getItem('formData'));
