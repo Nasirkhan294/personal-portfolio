@@ -165,6 +165,3 @@ const loadProjects = () => {
   }
 };
 
-document.addEventListener('DOMContentLoaded', () => {
-  loadProjects();
-});
