@@ -113,6 +113,11 @@ git commit -m "your commit message"
 
 ```
 
+```
+git push origin {i.e, your repo name}
+
+```
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
