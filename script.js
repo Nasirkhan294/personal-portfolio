@@ -237,26 +237,26 @@ if (localStorage.getItem('formData')) {
 }
 
 // Add event listeners to the input fields
-nameInput.addEventListener('input', (event) => {
+nameInput.oninput = (event) => {
   // Update the form data object with the new value
   formData.name = event.target.value;
 
   // Save the updated form data to local storage
   localStorage.setItem('formData', JSON.stringify(formData));
-});
+};
 
-emailInput.addEventListener('input', (event) => {
+emailInput.oninput = (event) => {
   // Update the form data object with the new value
   formData.email = event.target.value;
 
   // Save the updated form data to local storage
   localStorage.setItem('formData', JSON.stringify(formData));
-});
+};
 
-messageInput.addEventListener('input', (event) => {
+messageInput.oninput = (event) => {
   // Update the form data object with the new value
   formData.message = event.target.value;
 
   // Save the updated form data to local storage
   localStorage.setItem('formData', JSON.stringify(formData));
-});
+};

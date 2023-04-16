@@ -98,6 +98,8 @@ label {
 header {
   background-color: #fff;
   padding: 15px 0;
+  position: sticky;
+  top: 0;
 }
 
 header .container {
@@ -892,6 +894,10 @@ form textarea {
     max-width: 70%;
     top: -2em;
     left: 10em;
+  }
+
+  .popup-list-items {
+    margin-bottom: 2em;
   }
 
   .popup-body-content {
