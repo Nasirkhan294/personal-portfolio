@@ -102,14 +102,17 @@ git add --all or git add .
 git commit -m "your commit message"
 
 ```
+
 ```
 git add --all or git add .
 
 ```
+
 ```
 git commit -m "your commit message"
 
 ```
+
 ```
 git push origin {i.e, your repo name}
 
