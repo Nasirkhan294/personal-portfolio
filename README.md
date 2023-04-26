@@ -40,18 +40,17 @@
     <li>JavaScript</li>
   </ul>
 
-
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- [X] **Mobile Responsive**
-- [X] **Tablet Responsive**
-- [X] **Desktop Responsive**
-- [X] **Mobile Toggle Menu**
-- [X] **Portfolio Details Pop-up**
-- [X] **Validated Contact Form**
-- [X] **Local Storage of the Browser**
+- [x] **Mobile Responsive**
+- [x] **Tablet Responsive**
+- [x] **Desktop Responsive**
+- [x] **Mobile Toggle Menu**
+- [x] **Portfolio Details Pop-up**
+- [x] **Validated Contact Form**
+- [x] **Local Storage of the Browser**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -73,7 +72,6 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-
 ```
    ssh code:
    git@github.com:Nasirkhan294/my-personal-portfolio.git
@@ -91,17 +89,6 @@ Clone this repository to your desired folder:
 ### Deployment
 
 You can deploy this project using **Github-Pages**. In order to make your project live on Github, you'll want to push your updated repo by using these commands:
-
-
-```
-git add --all or git add .
-
-```
-
-```
-git commit -m "your commit message"
-
-```
 
 ```
 git add --all or git add .
@@ -168,6 +155,7 @@ To all the individuals whose creativity and dedication inspired the codebase, I 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
+
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
