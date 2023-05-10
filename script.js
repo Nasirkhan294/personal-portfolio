@@ -17,17 +17,18 @@ window.onscroll = () => {
 /* --------------------- Portfolio Item Details ---------------------- */
 const projects = [
   {
-    image: 'images/work1.jpg',
+    image: 'images/cc-sumit1.png',
     alt: 'A photo contain mobile, pens and cards',
-    name: 'Tonic',
-    listItems: ['CANOPY', 'Back End Dev', 2015],
-    description: 'A daily selection of privately personalized; no accounts or sign-ups required.',
-    popupDescription: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus cumque odio animi, sunt cupiditate natus quis veniam voluptatibus suscipit quod neque placeat eligendi perferendis, enim perspiciatis molestias error repudiandae obcaecati consequatur est. Eius ipsam quos rerum aspernatur quasi vero dolor, hic obcaecati officiis nobis ullam et voluptatibus ea dolorem atque!',
+    name: 'Conference Webpage',
+    listItems: ['Converge and Create', 'Front End Dev', 2023],
+    description: 'Converge and Create embodies the concept of uniting diverse ideas, perspectives, and individuals to spark innovation and bring new creations to life.',
+    popupDescription: 'Converge and Create embodies the concept of uniting diverse ideas, perspectives, and individuals to spark innovation and bring new creations to life. This project celebrates the power of collaboration and highlights the importance of inclusivity in the creative process. Through the convergence of varied viewpoints and talents, we aim to inspire groundbreaking ideas and foster a culture of creativity and teamwork.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     button: 'See Project',
     popupBtn1: 'See Live <i class="fa-solid fa-arrow-up-right-from-square"></i>',
     popupBtn2: 'See Source <i class="fa-brands fa-github"></i>',
-    popupBtn2Link: 'https://github.com/Nasirkhan294/my-personal-portfolio',
+    popupBtn1Link: 'https://nasirkhan294.github.io/converge-and-create/',
+    popupBtn2Link: 'https://github.com/Nasirkhan294/converge-and-create',
   },
   {
     image: 'images/work2.jpg',
@@ -40,7 +41,8 @@ const projects = [
     button: 'See Project',
     popupBtn1: 'See Live <i class="fa-solid fa-arrow-up-right-from-square"></i>',
     popupBtn2: 'See Source <i class="fa-brands fa-github"></i>',
-    popupBtn2Link: 'https://github.com/Nasirkhan294/my-personal-portfolio',
+    popupBtn1Link: '#',
+    popupBtn2Link: '#',
   },
   {
     image: 'images/work3.jpg',
@@ -53,7 +55,8 @@ const projects = [
     button: 'See Project',
     popupBtn1: 'See Live <i class="fa-solid fa-arrow-up-right-from-square"></i>',
     popupBtn2: 'See Source <i class="fa-brands fa-github"></i>',
-    popupBtn2Link: 'https://github.com/Nasirkhan294/my-personal-portfolio',
+    popupBtn1Link: '#',
+    popupBtn2Link: '#',
   },
   {
     image: 'images/work4.jpg',
@@ -66,7 +69,8 @@ const projects = [
     button: 'See Project',
     popupBtn1: 'See Live <i class="fa-solid fa-arrow-up-right-from-square"></i>',
     popupBtn2: 'See Source <i class="fa-brands fa-github"></i>',
-    popupBtn2Link: 'https://github.com/Nasirkhan294/my-personal-portfolio',
+    popupBtn1Link: '#',
+    popupBtn2Link: '#',
   },
 ];
 
@@ -91,6 +95,9 @@ const showPopup = (project) => {
 
   button1.innerHTML = project.popupBtn1;
   button2.innerHTML = project.popupBtn2;
+
+  button1.href = project.popupBtn1Link;
+  button2.href = project.popupBtn2Link;
 
   listItems.innerHTML = '';
   project.listItems.forEach((item) => {

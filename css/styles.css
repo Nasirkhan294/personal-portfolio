@@ -44,6 +44,9 @@ a {
   width: 53%;
   box-shadow: 0.4em 0.4em 1em #6070ff;
   transition: 1s;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .btn:enabled {
@@ -274,7 +277,7 @@ header nav ul.active li a {
 .popup-body-thumbnail {
   border-radius: 0.5em;
   overflow: hidden;
-  min-height: 48vh;
+  min-height: 30vh;
 }
 
 .popup-body-thumbnail img {
@@ -678,12 +681,16 @@ form textarea {
     direction: ltr;
   }
 
+  .popup-body-thumbnail {
+    min-height: 48vh;
+  }
+
   .popup-body-thumbnail img {
     max-height: 50vh;
   }
 
   #portfolio .portfolio-thumbnail img {
-    min-height: 85vh;
+    min-height: 50vh;
   }
 
   .popup-list-items li {
@@ -909,7 +916,7 @@ form textarea {
   }
 
   .popup-btn {
-    width: 35%;
+    width: 30%;
   }
 
   /* ------------ About Styles ---------- */

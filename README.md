@@ -45,12 +45,11 @@
 ### Key Features <a name="key-features"></a>
 
 - [x] **Mobile Responsive**
-- [x] **Tablet Responsive**
-- [x] **Desktop Responsive**
 - [x] **Mobile Toggle Menu**
 - [x] **Portfolio Details Pop-up**
 - [x] **Validated Contact Form**
 - [x] **Local Storage of the Browser**
+- [x] **First Capstone Project**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -123,7 +122,7 @@ git push origin {i.e, your repo name}
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **FIRST CAPSTONE PROJECT**
+- [ ] **Second CAPSTONE PROJECT**
 - [ ] **Coming Up Soon**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
