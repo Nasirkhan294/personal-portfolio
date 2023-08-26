@@ -57,7 +57,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Project Demo](https://nasirkhan294.github.io/my-personal-portfolio/)
+- [Live Project Demo](https://nasirkhan294.github.io/personal-portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
