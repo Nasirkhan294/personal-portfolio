@@ -846,6 +846,9 @@ form textarea {
   header .logo-wrapper {
     justify-content: flex-start;
   }
+  header .logo-wrapper .logo {
+    font-size: 1.5em;
+  }
 
   header nav {
     width: 30%;
@@ -899,7 +902,8 @@ form textarea {
 
   .popup-card {
     max-width: 70%;
-    top: -2em;
+    max-height: 90%;
+    top: -1em;
     left: 10em;
   }
 
@@ -910,6 +914,10 @@ form textarea {
   .popup-body-content {
     margin-top: 2em;
   }
+
+  .popup-body-thumbnail {
+    height: 100%;
+  } 
 
   .popup-btn-wrapper {
     justify-content: space-evenly;
