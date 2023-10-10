@@ -846,6 +846,7 @@ form textarea {
   header .logo-wrapper {
     justify-content: flex-start;
   }
+
   header .logo-wrapper .logo {
     font-size: 1.5em;
   }
@@ -917,7 +918,7 @@ form textarea {
 
   .popup-body-thumbnail {
     height: 100%;
-  } 
+  }
 
   .popup-btn-wrapper {
     justify-content: space-evenly;
