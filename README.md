@@ -110,11 +110,11 @@ git push origin {i.e, your repo name}
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Nasirkhan294**
+👤 **Nasir Mahmood**
 
-- GitHub: [Github](https://github.com/Nasirkhan294)
-- Twitter: [Twitter](https://twitter.com/NasirMa35888225)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/nasirmahd-8a8/)
+- GitHub: [Nasirkhan294](https://github.com/Nasirkhan294)
+- Twitter: [NasirMa35888225](https://twitter.com/NasirMa35888225)
+- LinkedIn: [nasirmahd](https://www.linkedin.com/in/nasirmahd/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -122,8 +122,7 @@ git push origin {i.e, your repo name}
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Second CAPSTONE PROJECT**
-- [ ] **Coming Up Soon**
+- [ ] **Third Capstone Project**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
