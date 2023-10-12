@@ -885,6 +885,7 @@ form textarea {
 
   .popup-body-thumbnail img {
     max-height: 60vh;
+    height: 100%;
   }
 
   #portfolio .portfolio-thumbnail img {
