@@ -404,6 +404,11 @@ header nav ul.active li a {
 .fa-times {
   color: #67798e;
   font-size: 1.5em;
+  cursor: pointer;
+}
+
+.fa-times:hover {
+  color: red;
 }
 
 .popup-list-items {
