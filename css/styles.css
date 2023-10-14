@@ -18,6 +18,7 @@ body {
 
 p {
   color: #344563;
+  font-size: 1em;
 }
 
 ul,
@@ -41,7 +42,7 @@ a {
   border-radius: 0.5em;
   cursor: pointer;
   font-size: 1em;
-  width: 53%;
+  width: 46%;
   box-shadow: 0.4em 0.4em 1em #6070ff;
   transition: 1s;
   display: flex;
@@ -107,10 +108,10 @@ header {
 
 header .container {
   justify-content: space-between;
-  margin-bottom: 1em;
 }
 
 header .logo {
+  font-size: 1.2em;
   font-weight: 700;
   color: #6070ff;
   transition: 1s;
@@ -253,6 +254,11 @@ header nav ul.active li a {
   background-color: #e5e5e5;
 }
 
+#portfolio h2 {
+  font-size: 1.2em;
+  color: #172b4d;
+}
+
 #portfolio .container {
   margin: 7em 0;
 }
@@ -310,18 +316,11 @@ header nav ul.active li a {
 
 .popup-list-items li:nth-of-type(1) {
   color: #344563;
-  font-size: 1em;
+  margin: 0 1.3em;
   font-weight: 700;
-  list-style: none;
-  margin: 0;
-  margin-right: 0.5em;
 }
 
 .popup-list-items li:nth-of-type(2) {
-  margin: 0 1.3em;
-}
-
-.popup-list-items li:nth-of-type(3) {
   margin-left: 0.5em;
 }
 
@@ -345,23 +344,12 @@ header nav ul.active li a {
 
 #portfolio .list-items li:nth-of-type(1) {
   color: #344563;
-  font-size: 1em;
+  margin: 0 1.3em;
   font-weight: 700;
-  list-style: none;
-  margin: 0;
-  margin-right: 0.5em;
 }
 
 #portfolio .list-items li:nth-of-type(2) {
-  margin: 0 1.3em;
-}
-
-#portfolio .list-items li:nth-of-type(3) {
   margin-left: 0.5em;
-}
-
-#portfolio h2 {
-  color: #172b4d;
 }
 
 #portfolio .languages {
@@ -476,7 +464,6 @@ header nav ul.active li a {
 }
 
 .about-social p {
-  font-size: 1em;
   color: #6070ff;
   text-transform: uppercase;
   font-weight: 500;
@@ -651,6 +638,7 @@ form textarea {
   /* ------------ Hero Area Styles ---------- */
   .hero-area {
     background-image: url(../images/hero-bg.png);
+    min-height: 50vh;
   }
 
   .hero-area .container {
@@ -687,15 +675,16 @@ form textarea {
   }
 
   .popup-body-thumbnail {
-    min-height: 48vh;
+    height: 100%;
   }
 
   .popup-body-thumbnail img {
-    max-height: 50vh;
+    height: 100%;
   }
 
   #portfolio .portfolio-thumbnail img {
-    min-height: 50vh;
+    min-height: 35vh;
+    height: 100%;
   }
 
   .popup-list-items li {
@@ -727,9 +716,8 @@ form textarea {
   /* ------------ Portfolio popup Styles ---------- */
 
   .popup-card {
-    margin: 3em;
+    margin: 2.5em;
     max-width: 90%;
-    padding-bottom: 2em;
   }
 
   .popup-title {
@@ -814,7 +802,7 @@ form textarea {
 
   #contact .container {
     align-items: center;
-    margin: 4em 0;
+    margin: 1.5em 0;
     max-width: 300px;
   }
 
