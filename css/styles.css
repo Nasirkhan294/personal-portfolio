@@ -142,12 +142,13 @@ header nav ul.active {
   flex-direction: column;
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   padding: 3em 0 0 2em;
   background-color: #6070ff;
   opacity: 0.9;
+  transition: all 0.5s ease;
 }
 
 .popup-languages li {
@@ -283,7 +284,6 @@ header nav ul.active li a {
 .popup-body-thumbnail {
   border-radius: 0.5em;
   overflow: hidden;
-  min-height: 30vh;
 }
 
 .popup-body-thumbnail img {
@@ -425,12 +425,12 @@ header nav ul.active li a {
 
 .popup-btn-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .popup-btn {
   font-size: 0.8em;
-  width: 45%;
+  width: 37%;
 }
 
 /* === About Style === */
@@ -484,10 +484,6 @@ header nav ul.active li a {
   justify-content: space-between;
   flex-flow: row wrap;
   margin: 1.5em 0;
-}
-
-.about-dropdown:nth-of-type(2),
-.about-dropdown:nth-of-type(3) {
   border-bottom: 1px solid #dfe1e6;
   padding-bottom: 1em;
 }
@@ -495,6 +491,12 @@ header nav ul.active li a {
 .dropdown-icon {
   align-self: flex-start;
   margin: 0.25em 1em 0 0;
+  cursor: pointer;
+}
+
+.dropdown-icon:hover {
+  color: #080;
+  transform: scale(1.1);
 }
 
 .language-data {
@@ -502,9 +504,14 @@ header nav ul.active li a {
 }
 
 .language-name-wrapper {
+  display: none;
   flex-direction: column;
   width: 100%;
   margin-top: 0.9em;
+}
+
+.language-name-wrapper.active {
+  display: flex;
 }
 
 .language-name {
@@ -526,13 +533,28 @@ header nav ul.active li a {
   background-color: #ff0;
 }
 
-.language-name .html {
-  background-color: #ff4500;
+.language-name .ruby {
+  background-color: #f00;
   color: #fff;
 }
 
-.language-name .css {
-  background-color: #0ff;
+.language-name .sql {
+  background-color: #384bfa;
+  color: #fff;
+}
+
+.language-name .react {
+  background-color: #000;
+  color: #0ff;
+}
+
+.language-name .rails {
+  background-color: #f00;
+  color: #fff;
+}
+
+.language-name .tailwind {
+  background-color: #3dbbba;
   color: #fff;
 }
 
@@ -683,7 +705,7 @@ form textarea {
   }
 
   #portfolio .portfolio-thumbnail img {
-    min-height: 35vh;
+    min-height: 31vh;
     height: 100%;
   }
 
@@ -716,8 +738,9 @@ form textarea {
   /* ------------ Portfolio popup Styles ---------- */
 
   .popup-card {
-    margin: 2.5em;
-    max-width: 90%;
+    margin: 2em;
+    max-width: 92%;
+    max-height: 85%;
   }
 
   .popup-title {
@@ -877,12 +900,11 @@ form textarea {
   /* ------------ Portfolio Styles ---------- */
 
   .popup-body-thumbnail img {
-    max-height: 60vh;
     height: 100%;
   }
 
   #portfolio .portfolio-thumbnail img {
-    min-height: 50vh;
+    min-height: 45vh;
   }
 
   #portfolio .portfolio-content {

@@ -35,7 +35,7 @@ const projects = [
     alt: 'A photo sticky notes',
     name: 'Super Sticky Notes',
     listItems: ['Frontend Dev', 2023],
-    description: 'Super Sticky Notes: Unite creativity and organization effortlessly! Create, edit, and manage your Sticky Notes with ease. Your data is secure in local storage. Begin your note-taking journey and let your ideas flourish',
+    description: 'Create, edit, and manage your Sticky Notes with ease. Your data is secure in local storage. Begin your note-taking journey and let your ideas flourish.',
     popupDescription: "This is a simple web-based Note list application built using React.js. The application allows users to create, read, update, and delete notes from their Sticky Notes. Users can search for specific notes. It uses local storage to store the user's notes, so they don't have to worry about losing their data. This project is a great starting point for those who want to learn web development or want to build their own note management application",
     technologies: ['React', 'CSS', 'Netlify'],
     button: 'See Project',
@@ -190,6 +190,22 @@ const loadProjects = () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   loadProjects();
+});
+
+/* --------------------- About dropdown toggle ---------------------- */
+const dropdownButtons = document.querySelectorAll('.fa-caret-down');
+const dropdownContents = document.querySelectorAll('.language-name-wrapper');
+
+dropdownButtons.forEach((btn, index) => {
+  btn.addEventListener('click', () => {
+    dropdownContents[index].classList.toggle('active');
+
+    dropdownContents.forEach((content, currentIndex) => {
+      if (currentIndex !== index) {
+        content.classList.remove('active');
+      }
+    });
+  });
 });
 
 /* --------------------- Form Validation Details ---------------------- */
