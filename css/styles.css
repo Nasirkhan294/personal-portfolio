@@ -98,6 +98,43 @@ label {
   display: none;
 }
 
+.cursor-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0.5rem;
+  width: 0.5rem;
+  background: #2230d2;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 10000;
+}
+
+.cursor-1.active {
+  height: 5rem;
+  width: 5rem;
+  opacity: 0.3;
+}
+
+.cursor-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2.5rem;
+  width: 2.5rem;
+  border: 0.1rem solid #2230d2;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 10000;
+  transition: 0.3s linear;
+}
+
+.cursor-2.active {
+  display: none;
+}
+
 /* -------------------- Base Header Styles -------------------- */
 header {
   background-color: #fff;
@@ -111,7 +148,8 @@ header .container {
 }
 
 header .logo {
-  font-size: 1.2em;
+  font-family: 'Galada', cursive;
+  font-size: 1.5em;
   font-weight: 700;
   color: #6070ff;
   transition: 1s;
@@ -864,7 +902,7 @@ form textarea {
   }
 
   header .logo-wrapper .logo {
-    font-size: 1.5em;
+    font-size: 2em;
   }
 
   header nav {
