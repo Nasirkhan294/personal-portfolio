@@ -98,41 +98,27 @@ label {
   display: none;
 }
 
-.cursor-1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 0.5rem;
-  width: 0.5rem;
-  background: #2230d2;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
+#theme-toggler {
+  position: fixed;
+  top: 3.5em;
+  right: 1em;
+  z-index: 1000;
+  height: 3rem;
+  width: 3rem;
+  line-height: 3rem;
   border-radius: 50%;
-  z-index: 10000;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0.4rem 0.4rem 1rem #111;
+  text-align: center;
+  color: #111;
 }
 
-.cursor-1.active {
-  height: 5rem;
-  width: 5rem;
-  opacity: 0.3;
-}
-
-.cursor-2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2.5rem;
-  width: 2.5rem;
-  border: 0.1rem solid #2230d2;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  z-index: 10000;
-  transition: 0.3s linear;
-}
-
-.cursor-2.active {
-  display: none;
+#theme-toggler:hover {
+  color: #0017eb;
+  box-shadow:
+    0.4rem 0.4rem 1rem #111 inset,
+    -0.4rem -0.4rem 1rem #333 inset;
 }
 
 /* -------------------- Base Header Styles -------------------- */
@@ -887,6 +873,44 @@ form textarea {
 
 /* ========== Desktop Styles ========== */
 @media only screen and (min-width: 1200px) {
+  /* ========== Custom cursor Styles ========== */
+  .cursor-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0.5rem;
+    width: 0.5rem;
+    background: #2230d2;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 10000;
+  }
+
+  .cursor-1.active {
+    height: 5rem;
+    width: 5rem;
+    opacity: 0.3;
+  }
+
+  .cursor-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 0.1rem solid #2230d2;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 10000;
+    transition: 0.3s linear;
+  }
+
+  .cursor-2.active {
+    display: none;
+  }
+
   /* ------------ General Styles ---------- */
   .container {
     max-width: 960px;
