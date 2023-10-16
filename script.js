@@ -216,6 +216,20 @@ document.addEventListener('DOMContentLoaded', () => {
   loadProjects();
 });
 
+/* ============== Theme toggler =========== */
+const themeToggler = document.querySelector('#theme-toggler');
+
+themeToggler.onclick = () => {
+  themeToggler.classList.toggle('fa-sun');
+  if (themeToggler.classList.contains('fa-sun')) {
+    themeToggler.classList.remove('fa-moon');
+    document.body.classList.add('active');
+  } else {
+    themeToggler.classList.add('fa-moon');
+    document.body.classList.remove('active');
+  }
+};
+
 /* --------------------- About dropdown toggle ---------------------- */
 const dropdownButtons = document.querySelectorAll('.fa-caret-down');
 const dropdownContents = document.querySelectorAll('.language-name-wrapper');

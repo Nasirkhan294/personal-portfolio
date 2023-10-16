@@ -49,7 +49,6 @@
 - [x] **Portfolio Details Pop-up**
 - [x] **Validated Contact Form**
 - [x] **Local Storage of the Browser**
-- [x] **First Capstone Project**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -122,7 +121,7 @@ git push origin {i.e, your repo name}
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Third Capstone Project**
+- [ ] **Portfolio Card Slider**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

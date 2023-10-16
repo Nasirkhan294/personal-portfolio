@@ -1,4 +1,20 @@
 /* ====================== Global Styles  ========================== */
+:root {
+  --main-color: #172b4d;
+  --secondary-color: #6070ff;
+  --contact-color: #0017eb;
+  --white-color: #fff;
+  --bg-color: #e5e5e5;
+  --box-shadow: 0.4rem 0.4rem 1rem #ccc, -0.4rem -0.4rem 1rem var(--white-color);
+  --box-shadow-inset:
+    0.4rem 0.4rem 1rem #ccc inset,
+    -0.4rem -0.4rem 1rem var(--white-color) inset;
+  --border-radius: 95% 4% 97% 5%/4% 94% 3% 95%;
+  --border-radius-hover: 4% 95% 6% 95%/95% 4% 92% 5%;
+  --border: 1px solid var(--secondary-color);
+  --border-hover: 1px dashed var(--secondary-color);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,13 +27,26 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1em;
-  background-color: #e5e5e5;
+  background-color: var(--bg-color);
+}
+
+body.active {
+  --main-color: #fff;
+  --contact-color: #141414;
+  --secondary-color: #052beb;
+  --bg-color: #222;
+  --white-color: #000;
+  --border: 0.2rem solid var(--main-color);
+  --box-shadow: 0.4rem 0.4rem 1rem #111, -0.4rem -0.4rem 1rem #333;
+  --box-shadow-inset:
+    0.4rem 0.4rem 1rem #111 inset,
+    -0.4rem -0.4rem 1rem #333 inset;
 }
 
 p {
-  color: #344563;
+  color: var(--main-color);
   font-size: 1em;
 }
 
@@ -35,15 +64,15 @@ a {
 }
 
 .btn {
-  background-color: #fff;
-  color: #0d45d3;
+  background-color: var(--white-color);
+  color: var(--main-color);
   padding: 0.625em 0;
-  border: 1px solid #7f8cff;
-  border-radius: 0.5em;
+  border: var(--border);
+  border-radius: var(--border-radius);
   cursor: pointer;
   font-size: 1em;
   width: 46%;
-  box-shadow: 0.4em 0.4em 1em #6070ff;
+  box-shadow: 0.4em 0.4em 1em var(--secondary-color);
   transition: 1s;
   display: flex;
   justify-content: space-around;
@@ -51,21 +80,23 @@ a {
 }
 
 .btn:enabled {
-  background-color: #fff;
+  background-color: var(--white-color);
   color: #396df2;
 }
 
 .btn:hover {
-  background-color: #6070ff;
-  color: #fff;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
   font-weight: 500;
   transform: scale(1.1);
-  box-shadow: 0.4em 0.4em 1em #6070ff inset, -0.4em -0.4em 1em #6070ff inset;
+  box-shadow: var(--box-shadow);
+  border: var(--border-hover);
+  border-radius: var(--border-radius-hover);
 }
 
 .btn:active {
   background-color: #2230d2;
-  color: #fff;
+  color: var(--white-color);
 }
 
 .flex-row {
@@ -100,7 +131,7 @@ label {
 
 #theme-toggler {
   position: fixed;
-  top: 3.5em;
+  top: 4em;
   right: 1em;
   z-index: 1000;
   height: 3rem;
@@ -109,21 +140,19 @@ label {
   border-radius: 50%;
   font-size: 1.5rem;
   cursor: pointer;
-  box-shadow: 0.4rem 0.4rem 1rem #111;
+  box-shadow: var(--box-shadow);
   text-align: center;
-  color: #111;
+  color: var(--main-color);
 }
 
 #theme-toggler:hover {
-  color: #0017eb;
-  box-shadow:
-    0.4rem 0.4rem 1rem #111 inset,
-    -0.4rem -0.4rem 1rem #333 inset;
+  color: var(--secondary-color);
+  box-shadow: var(--box-shadow-inset);
 }
 
 /* -------------------- Base Header Styles -------------------- */
 header {
-  background-color: #fff;
+  background-color: var(--white-color);
   padding: 15px 0;
   position: sticky;
   top: 0;
@@ -134,10 +163,10 @@ header .container {
 }
 
 header .logo {
-  font-family: 'Galada', cursive;
+  font-family: "Galada", cursive;
   font-size: 1.5em;
   font-weight: 700;
-  color: #6070ff;
+  color: var(--main-color);
   transition: 1s;
 }
 
@@ -147,13 +176,13 @@ header .logo:hover {
 
 header #menu-btn {
   position: relative;
-  color: #6070ff;
+  color: var(--secondary-color);
   font-size: 1.3em;
   cursor: pointer;
 }
 
 header #menu-btn.active {
-  color: #fff;
+  color: var(--white-color);
 }
 
 header nav ul {
@@ -170,7 +199,7 @@ header nav ul.active {
   width: 100%;
   height: 100%;
   padding: 3em 0 0 2em;
-  background-color: #6070ff;
+  background-color: var(--secondary-color);
   opacity: 0.9;
   transition: all 0.5s ease;
 }
@@ -194,7 +223,7 @@ header nav ul.active li {
 }
 
 header nav ul.active li a {
-  color: #fff;
+  color: var(--main-color);
   text-transform: capitalize;
   font-weight: 600;
   font-size: 2em;
@@ -208,7 +237,7 @@ header nav ul.active li a {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right center;
-  background-color: #fff;
+  background-color: var(--white-color);
   border-bottom-left-radius: 3em;
   min-height: 100vh;
 }
@@ -226,7 +255,7 @@ header nav ul.active li a {
   font-size: 2.3em;
   font-weight: 700;
   margin-bottom: 10px;
-  color: #172b4d;
+  color: var(--main-color);
 }
 
 .hero-social {
@@ -236,7 +265,7 @@ header nav ul.active li a {
 
 .hero-social p {
   font-size: 1.2em;
-  color: #6070ff;
+  color: var(--secondary-color);
   text-transform: uppercase;
 }
 
@@ -253,35 +282,28 @@ header nav ul.active li a {
   align-self: flex-start;
 }
 
+.about-social ul i,
 .hero-social ul i {
   font-size: 1.2em;
   font-weight: 700;
   margin: 12px 0;
-  color: #505f79;
-  transition: 1s;
-}
-
-.about-social ul i {
-  font-size: 1.2em;
-  font-weight: 700;
-  margin: 12px 0;
-  color: #475a6b;
+  color: var(--main-color);
   transition: 1s;
 }
 
 .hero-social ul i:hover {
-  color: #2230d2;
+  color: var(--main-color);
   transform: scale(1.2);
 }
 
 /* === Portfolio Styles === */
 #portfolio {
-  background-color: #e5e5e5;
+  background-color: var(--bg-color);
 }
 
 #portfolio h2 {
   font-size: 1.2em;
-  color: #172b4d;
+  color: var(--main-color);
 }
 
 #portfolio .container {
@@ -292,7 +314,7 @@ header nav ul.active li a {
   display: grid;
   grid-template-columns: 100%;
   grid-gap: 1em;
-  background-color: #fff;
+  background-color: var(--white-color);
   padding: 1em;
   border: 1px solid #dfe1e6;
   border-radius: 1.5em;
@@ -339,7 +361,7 @@ header nav ul.active li a {
 }
 
 .popup-list-items li:nth-of-type(1) {
-  color: #344563;
+  color: var(--main-color);
   margin: 0 1.3em;
   font-weight: 700;
 }
@@ -355,7 +377,7 @@ header nav ul.active li a {
 #portfolio .list-items li {
   font-size: 0.8em;
   font-weight: 500;
-  color: #6b778c;
+  color: var(--main-color);
 }
 
 #portfolio .languages li {
@@ -367,7 +389,7 @@ header nav ul.active li a {
 }
 
 #portfolio .list-items li:nth-of-type(1) {
-  color: #344563;
+  color: var(--main-color);
   margin: 0 1.3em;
   font-weight: 700;
 }
@@ -389,7 +411,7 @@ header nav ul.active li a {
   display: none;
   grid-template-columns: 100%;
   grid-gap: 0.5em;
-  background-color: #fff;
+  background-color: var(--white-color);
   padding: 1em;
   border: 1px solid #dfe1e6;
   border-radius: 1.5em;
@@ -432,7 +454,7 @@ header nav ul.active li a {
 }
 
 .popup-title {
-  color: #172b4d;
+  color: var(--main-color);
 }
 
 .popup-description {
@@ -459,7 +481,7 @@ header nav ul.active li a {
 
 /* === About Style === */
 #about {
-  background-color: #fff;
+  background-color: var(--white-color);
   border-top-right-radius: 3em;
   margin-bottom: -3em;
   padding-bottom: 6em;
@@ -474,13 +496,13 @@ header nav ul.active li a {
   font-size: 2.5em;
   font-weight: 700;
   margin-bottom: 10px;
-  color: #172b4d;
+  color: var(--main-color);
 }
 
 #about h3 {
   font-size: 1.25em;
   font-weight: normal;
-  color: #000;
+  color: var(--main-color);
 }
 
 .about-social {
@@ -488,7 +510,7 @@ header nav ul.active li a {
 }
 
 .about-social p {
-  color: #6070ff;
+  color: var(--secondary-color);
   text-transform: uppercase;
   font-weight: 500;
 }
@@ -500,7 +522,7 @@ header nav ul.active li a {
 }
 
 .about-social ul i:hover {
-  color: #2230d2;
+  color: var(--main-color);
   transform: scale(1.2);
 }
 
@@ -508,7 +530,7 @@ header nav ul.active li a {
   justify-content: space-between;
   flex-flow: row wrap;
   margin: 1.5em 0;
-  border-bottom: 1px solid #dfe1e6;
+  border-bottom: var(--border);
   padding-bottom: 1em;
 }
 
@@ -516,10 +538,11 @@ header nav ul.active li a {
   align-self: flex-start;
   margin: 0.25em 1em 0 0;
   cursor: pointer;
+  color: var(--main-color);
 }
 
 .dropdown-icon:hover {
-  color: #080;
+  color: var(--secondary-color);
   transform: scale(1.1);
 }
 
@@ -551,6 +574,7 @@ header nav ul.active li a {
 
 .language-name p {
   margin-left: 1em;
+  color: var(--secondary-color);
 }
 
 .language-name .javascript {
@@ -559,12 +583,11 @@ header nav ul.active li a {
 
 .language-name .ruby {
   background-color: #f00;
-  color: #fff;
+  color: var(--white-color);
 }
 
 .language-name .sql {
   background-color: #384bfa;
-  color: #fff;
 }
 
 .language-name .react {
@@ -574,12 +597,10 @@ header nav ul.active li a {
 
 .language-name .rails {
   background-color: #f00;
-  color: #fff;
 }
 
 .language-name .tailwind {
   background-color: #3dbbba;
-  color: #fff;
 }
 
 /* === Contact Styles === */
@@ -588,7 +609,7 @@ header nav ul.active li a {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right 0;
-  background-color: #0017eb;
+  background-color: var(--contact-color);
   border-top-left-radius: 3em;
 }
 
@@ -605,7 +626,7 @@ header nav ul.active li a {
 #contact p {
   margin: 1em 0;
   font-size: 1em;
-  color: #ebebff;
+  color: #fff;
 }
 
 .contact-input {
@@ -615,7 +636,7 @@ header nav ul.active li a {
   margin-bottom: 1em;
   border: none;
   border-radius: 0.5em;
-  color: #172b4d;
+  color: var(--main-color);
 }
 
 form textarea {
@@ -671,13 +692,13 @@ form textarea {
   }
 
   header nav ul li a {
-    color: #344563;
+    color: var(--main-color);
     font-weight: 500;
   }
 
   header nav ul li a:hover {
-    color: #6070ff;
-    border-bottom: 2px solid #6070ff;
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
     padding-bottom: 0.5em;
   }
 
@@ -743,7 +764,7 @@ form textarea {
 
   #portfolio h2 {
     font-size: 1.5em;
-    color: #091e42;
+    color: var(--main-color);
   }
 
   .language-name p {
@@ -853,10 +874,6 @@ form textarea {
     max-width: 300px;
   }
 
-  .contact-input {
-    border-radius: inherit;
-  }
-
   #contact h2 {
     font-size: 2em;
   }
@@ -899,7 +916,7 @@ form textarea {
     left: 0;
     height: 2.5rem;
     width: 2.5rem;
-    border: 0.1rem solid #2230d2;
+    border: var(--border);
     pointer-events: none;
     transform: translate(-50%, -50%);
     border-radius: 50%;
