@@ -64,7 +64,7 @@
           <div class="hero-main-content">
             <h1>
               I'm Nasir.<br />
-              Glad to see you!
+              <span class="typing-text"></span>
             </h1>
             <p>
               I'm a passionate software developer on a mission to bring your
@@ -248,7 +248,13 @@
                   </a>
                 </li>
               </ul>
-              <a href="https://drive.google.com/file/d/1wzlPjkVKw5LF9Iu3z3WtxWFLyZVzThpl/view?usp=drive_link" type="button" target="_blank" class="btn">Get my resume</a>
+              <a
+                href="https://drive.google.com/file/d/1wzlPjkVKw5LF9Iu3z3WtxWFLyZVzThpl/view?usp=drive_link"
+                type="button"
+                target="_blank"
+                class="btn"
+                >Get my resume</a
+              >
             </div>
           </div>
           <ul class="dropdown-wrapper">
@@ -381,6 +387,24 @@
       src="https://kit.fontawesome.com/7f35089b8a.js"
       crossorigin="anonymous"
     ></script>
+    <!-- JavaScript typed Link -->
+    <script src="js/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <!-- JavaScript Swiper link -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script>
+      var typed = new Typed(".typing-text", {
+        strings: [
+          "Welcome to my portfolio",
+          "Glad to see you here.",
+          "Let's make the web better together.",
+          "Explore my work and connect!",
+        ],
+        typeSpeed: 80,
+        loop: true,
+      });
+    </script>
     <!-- JavaScript file -->
     <script src="script.js"></script>
   </body>

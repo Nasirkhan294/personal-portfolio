@@ -252,10 +252,15 @@ header nav ul.active li a {
 }
 
 .hero-area h1 {
+  font-family: 'Galada', sans-serif;
   font-size: 2.3em;
   font-weight: 700;
   margin-bottom: 10px;
   color: var(--main-color);
+}
+
+.hero-area h1 span {
+  color: var(--secondary-color);
 }
 
 .hero-social {
