@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h3><b>Personal Portfolio Project</b></h3>
+  <h1><b>Personal Portfolio</b></h1>
 
 </div>
 
