@@ -11,14 +11,12 @@
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
-    - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
@@ -40,15 +38,6 @@
     <li>JavaScript</li>
   </ul>
 
-<!-- Features -->
-
-### Key Features <a name="key-features"></a>
-
-- [x] **Mobile Responsive**
-- [x] **Mobile Toggle Menu**
-- [x] **Portfolio Details Pop-up**
-- [x] **Validated Contact Form**
-- [x] **Local Storage of the Browser**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
