@@ -495,7 +495,6 @@ header nav ul.active li a {
 
 .about-main-content {
   margin: 5.625em 0 1.25em 0;
-  width: 100%;
 }
 
 #about h2 {
@@ -532,81 +531,12 @@ header nav ul.active li a {
   transform: scale(1.2);
 }
 
-.about-dropdown {
-  justify-content: space-between;
-  flex-flow: row wrap;
-  margin: 1.5em 0;
-  border-bottom: var(--border);
-  padding-bottom: 1em;
-}
-
-.dropdown-icon {
-  align-self: flex-start;
-  margin: 0.25em 1em 0 0;
-  cursor: pointer;
-  color: var(--main-color);
-}
-
-.dropdown-icon:hover {
-  color: var(--secondary-color);
-  transform: scale(1.1);
-}
-
-.language-data {
+.about-thumbnail {
   width: 90%;
 }
 
-.language-name-wrapper {
-  display: none;
-  flex-direction: column;
+.about-thumbnail img {
   width: 100%;
-  margin-top: 0.9em;
-}
-
-.language-name-wrapper.active {
-  display: flex;
-}
-
-.language-name {
-  background-color: #f7f7f9;
-  margin: 0.2em 0;
-  padding: 0.5em;
-  transition: 1s;
-}
-
-.language-name:hover {
-  transform: translateY(-1em);
-}
-
-.language-name p {
-  margin-left: 1em;
-  color: var(--secondary-color);
-}
-
-.language-name .javascript {
-  background-color: #ff0;
-}
-
-.language-name .ruby {
-  background-color: #f00;
-  color: var(--white-color);
-}
-
-.language-name .sql {
-  background-color: #384bfa;
-}
-
-.language-name .react {
-  background-color: #000;
-  color: #0ff;
-}
-
-.language-name .rails {
-  background-color: #f00;
-}
-
-.language-name .tailwind {
-  background-color: #3dbbba;
 }
 
 /* === Contact Styles === */

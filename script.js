@@ -231,20 +231,20 @@ themeToggler.onclick = () => {
 };
 
 /* --------------------- About dropdown toggle ---------------------- */
-const dropdownButtons = document.querySelectorAll('.fa-caret-down');
-const dropdownContents = document.querySelectorAll('.language-name-wrapper');
+// const dropdownButtons = document.querySelectorAll('.fa-caret-down');
+// const dropdownContents = document.querySelectorAll('.language-name-wrapper');
 
-dropdownButtons.forEach((btn, index) => {
-  btn.addEventListener('click', () => {
-    dropdownContents[index].classList.toggle('active');
+// dropdownButtons.forEach((btn, index) => {
+//   btn.addEventListener('click', () => {
+//     dropdownContents[index].classList.toggle('active');
 
-    dropdownContents.forEach((content, currentIndex) => {
-      if (currentIndex !== index) {
-        content.classList.remove('active');
-      }
-    });
-  });
-});
+//     dropdownContents.forEach((content, currentIndex) => {
+//       if (currentIndex !== index) {
+//         content.classList.remove('active');
+//       }
+//     });
+//   });
+// });
 
 /* --------------------- Form Validation Details ---------------------- */
 const contactForm = document.getElementById('contact-form');
