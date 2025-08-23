@@ -33,9 +33,9 @@ The **Personal Portfolio** project is a platform that highlights my technical sk
 ## 🛠 Built With <a name="built-with"></a>
 
   <ul>
-    <li>HTML</li>
+    <li>React</li>
     <li>CSS</li>
-    <li>JavaScript</li>
+    <li>SwiperJs</li>
   </ul>
 
 
