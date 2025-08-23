@@ -101,8 +101,7 @@ git push origin {i.e, your repo name}
 👤 **Nasir Mahmood**
 
 - GitHub: [Nasirkhan294](https://github.com/Nasirkhan294)
-- Twitter: [NasirMa35888225](https://twitter.com/NasirMa35888225)
-- LinkedIn: [nasirmahd](https://www.linkedin.com/in/nasirmahd/)
+- LinkedIn: [nasirmahd](https://www.linkedin.com/in/nasirmahdkhan/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
