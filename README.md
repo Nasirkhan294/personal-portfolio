@@ -26,9 +26,9 @@
 
 # 📖 Personal Portfolio <a name="about-project"></a>
 
-![Portfolio-image](./images/p-img.png)
+![Portfolio-image](./src/img/preview.png)
 
-**Personal Portfolio:** The Personal Portfolio project served as a platform for me to demonstrate my technical proficiency and present my projects in a compelling manner to potential employers.
+The **Personal Portfolio** project is a platform that highlights my technical skills, projects, and achievements. It serves as a professional portfolio to showcase my work to potential employers and collaborators.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -45,7 +45,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Project Demo](https://nasirkhan294.github.io/personal-portfolio/)
+- [Live Project Demo](https://nasir-personal-portfolio.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -57,11 +57,11 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
+In order to run this project you need Git installed:
 
 ```
-   ssh code:
-   git@github.com:Nasirkhan294/my-personal-portfolio.git
+    git --version
+
 ```
 
 ### Setup
@@ -75,10 +75,12 @@ Clone this repository to your desired folder:
 
 ### Deployment
 
-You can deploy this project using **Github-Pages**. In order to make your project live on Github, you'll want to push your updated repo by using these commands:
+You can deploy this project using Netlify or GitHub Pages.
+
+For GitHub Pages, push your repo with:
 
 ```
-git add --all or git add .
+git add .
 
 ```
 
@@ -91,6 +93,9 @@ git commit -m "your commit message"
 git push origin {i.e, your repo name}
 
 ```
+
+For Netlify, drag and drop your project folder into [Netlify Deploy](https://app.netlify.com/)
+.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -109,7 +114,7 @@ git push origin {i.e, your repo name}
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Portfolio Card Slider**
+- [ ] **Portfolio Card Auto Slider**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -127,7 +132,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-Please support this project and be a part of something meaningful and impactful. Your contribution can make a significant difference and help us achieve our goals faster.
+If you like this project, please ⭐️ the repository and share it with others.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -135,7 +140,7 @@ Please support this project and be a part of something meaningful and impactful.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-To all the individuals whose creativity and dedication inspired the codebase, I want to express my heartfelt gratitude. Your tireless efforts have left an indelible mark on this project and your contributions will be remembered for years to come. Thank you for being an integral part of our success.
+I would like to thank all the developers and designers whose work inspired me to create this portfolio. Special thanks to the open-source community for continuous learning resources.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
