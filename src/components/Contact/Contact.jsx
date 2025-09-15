@@ -1,11 +1,12 @@
-import React, { useContext, useRef, useState } from "react";
-import "./Contact.css";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { themeContext } from "../../Context";
+import "./Contact.css";
+import { useTheme } from "../../Context";
+import { Col, Row } from "react-bootstrap";
 
 const Contact = () => {
-  const theme = useContext(themeContext);
-  const darkMode = theme.state.darkMode;
+  const { state } = useTheme();
+  const { darkMode } = state;
   const form = useRef();
   const [done, setDone] = useState(false);
   const [error, setError] = useState("");
@@ -55,22 +56,40 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-form" id="contact">
+    <Row
+      className="contact-form gap-4 gap-lg-0"
+      id="contact"
+      style={{marginTop: "8rem"}}
+    >
       {/* left side */}
-      <div className="w-left">
-        <div className="awesome">
-          <span style={{ color: darkMode ? "white" : "" }}>Get in Touch</span>
-          <span>Contact me</span>
+      <Col lg={6} className="px-0">
+        <div className="text-center text-lg-start">
+          <h2
+            className="fw-bold"
+            style={{ color: darkMode ? "white" : "", fontSize: "2.5rem" }}
+          >
+            Get in Touch
+          </h2>
+          <h3
+            className="fw-bold"
+            style={{ color: "var(--orange)", fontSize: "2rem" }}
+          >
+            Contact me
+          </h3>
           <div
             className="blur s-blur1"
             style={{ background: "#ABF1FF94" }}
           ></div>
         </div>
-      </div>
+      </Col>
 
       {/* right side form */}
-      <div className="c-right">
-        <form ref={form} onSubmit={sendEmail}>
+      <Col lg={6} className="position-relative">
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          className="d-flex flex-column align-items-center gap-4 px-3"
+        >
           <input
             type="text"
             name="user_name"
@@ -83,11 +102,11 @@ const Contact = () => {
             className="user"
             placeholder="Email"
           />
-          <textarea name="message" className="user" placeholder="Message" />
+          <textarea name="message" className="user" placeholder="Message" style={{height: "6rem"}} />
           <input
             type="submit"
             value={loading ? "Sending..." : "Send"}
-            className="button"
+            className="button mb-5"
             disabled={loading}
           />
 
@@ -102,8 +121,8 @@ const Contact = () => {
             style={{ background: "var(--purple)" }}
           ></div>
         </form>
-      </div>
-    </div>
+      </Col>
+    </Row>
   );
 };
 

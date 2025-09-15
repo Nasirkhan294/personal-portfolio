@@ -1,16 +1,14 @@
-import React from "react";
-import "./Footer.css";
-import Wave from "../../img/wave.png";
 import Insta from "@iconscout/react-unicons/icons/uil-instagram";
 import LinkedIn from "@iconscout/react-unicons/icons/uil-linkedin";
 import Gitub from "@iconscout/react-unicons/icons/uil-github";
+import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div className="footer">
-      <img src={Wave} alt="" style={{ width: "100%" }} />
-      <div className="f-content">
-        <div className="f-icons">
+    <div className="d-flex align-items-center footer">
+      <img src="/img/wave.png" alt="" style={{ width: "100%" }} />
+      <div className="f-content d-flex flex-column align-items-center gap-5 text-white">
+        <div className="d-flex gap-4">
           <a
             href="https://www.instagram.com/nasir_khan294/"
             target="_blank"
@@ -33,7 +31,7 @@ const Footer = () => {
             <Gitub color="white" size={"3rem"} />
           </a>
         </div>
-        <span>Copyright © 2025 .All rights reserved.</span>
+        <p>Copyright © 2025 .All rights reserved.</p>
       </div>
     </div>
   );

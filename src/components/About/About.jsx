@@ -1,55 +1,51 @@
-import React, { useContext } from "react";
-import "./About.css";
-import Upwork from "../../img/Upwork.png";
-import Fiverr from "../../img/fiverr.png";
-import Linkedin from "../../img/linkedin.png";
-import Github from "../../img/github.png";
-import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
-const Works = () => {
+import "./About.css";
+import { useTheme } from "../../Context";
+import { Col, Row } from "react-bootstrap";
+const About = () => {
   // context
-  const theme = useContext(themeContext);
-  const darkMode = theme.state.darkMode;
+  const { state } = useTheme();
+  const { darkMode } = state;
 
   // transition
   return (
-    <div className="works" id="works">
+    <Row className="about px-0 px-lg-5" id="about">
       {/* left side */}
-      <div className="w-left">
-        <div className="awesome">
-          {/* dark Mode */}
-          <span style={{ color: darkMode ? "white" : "" }}>All About</span>
-          <span>Myself</span>
-          <span>
-            I'm a passionate Front-End developer on a mission to bring your
-            <br />
-            dreams to life through code! Whether it's crafting a cutting-edge
-            <br />
-            project, adding an exciting new feature, or crafting a stunning
-            <br />
-            website, I've got the skills and expertise to make it happen. Take a
-            <br />
-            glimpse into my portfolio and journey to see how I've turned ideas
-            <br />
-            into reality. If you're ready to turn your vision into a digital
-            <br />
-            masterpiece, reach out to me without hesitation. Let's embark on
-            <br />
-            this exciting coding adventure together!
-          </span>
-          <Link to="contact" smooth={true} spy={true}>
-            <button className="button s-button">Hire Me</button>
-          </Link>
-          <div
-            className="blur s-blur1"
-            style={{ background: "#ABF1FF94" }}
-          ></div>
-        </div>
-
-        {/* right side */}
-      </div>
-      <div className="w-right">
+      <Col lg={6}>
+        {/* dark Mode */}
+        <h2
+          className="fw-bold"
+          style={{ color: darkMode ? "white" : "", fontSize: "2.5rem" }}
+        >
+          All About
+        </h2>
+        <h3
+          className="fw-bold"
+          style={{ color: "var(--orange)", fontSize: "2.5rem" }}
+        >
+          Myself
+        </h3>
+        <p
+          className="lh-sm mt-4"
+          style={{ color: "var(--gray)", fontSize: "16px" }}
+        >
+          I'm a passionate Front-End developer on a mission to bring your dreams
+          to life through code! Whether it's crafting a cutting-edge project,
+          adding an exciting new feature, or crafting a stunning website, I've
+          got the skills and expertise to make it happen. Take a glimpse into my
+          portfolio and journey to see how I've turned ideas into reality. If
+          you're ready to turn your vision into a digital masterpiece, reach out
+          to me without hesitation. Let's embark on this exciting coding
+          adventure together!
+        </p>
+        <Link to="contact" smooth={true} spy={true}>
+          <button className="button mt-5 px-5">Hire Me</button>
+        </Link>
+        <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
+      </Col>
+      {/* right side */}
+      <Col lg={6} className="w-right">
         <motion.div
           initial={{ rotate: 45 }}
           whileInView={{ rotate: 0 }}
@@ -57,25 +53,25 @@ const Works = () => {
           transition={{ duration: 3.5, type: "spring" }}
           className="w-mainCircle"
         >
-          <div className="w-secCircle">
-            <img src={Upwork} alt="" />
+          <div className="w-secCircle" style={{ top: "-5rem", left: "6rem" }}>
+            <img src="/img/Upwork.png" alt="Upwork" />
           </div>
-          <div className="w-secCircle">
-            <img src={Linkedin} alt="" />
+          <div className="w-secCircle" style={{ top: "5rem", left: "-3rem" }}>
+            <img src="/img/linkedin.png" alt="Linkedin" />
           </div>
-          <div className="w-secCircle">
-            <img src={Fiverr} alt="" />
+          <div className="w-secCircle" style={{ top: "16rem", left: "6rem" }}>
+            <img src="/img/fiverr.png" alt="Fiver" />
           </div>
-          <div className="w-secCircle">
-            <img src={Github} alt="" />
+          <div className="w-secCircle" style={{ top: "5rem", left: "15rem" }}>
+            <img src="/img/github.png" alt="Github" />
           </div>
         </motion.div>
         {/* background Circles */}
         <div className="w-backCircle blueCircle"></div>
         <div className="w-backCircle yellowCircle"></div>
-      </div>
-    </div>
+      </Col>
+    </Row>
   );
 };
 
-export default Works;
+export default About;

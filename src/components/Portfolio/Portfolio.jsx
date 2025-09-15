@@ -1,106 +1,109 @@
-import React, { useContext } from "react";
-import "./Portfolio.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import MohidConstructions from "../../img/mohid-constructions.png";
-import LandingPage from "../../img/landing-page.png";
-import Ecommerce from "../../img/ecommerce.png";
-import GithubRepo from "../../img/github-repos.png";
-import Halloween from '../../img/halloween.png';
-import { themeContext } from "../../Context";
+import { Autoplay } from "swiper/modules";
 import Github from "@iconscout/react-unicons/icons/uil-github";
+import "swiper/css";
+import "./Portfolio.css";
+import { useTheme } from "../../Context";
+
+const projects = [
+  {
+    title: "Mohid Constructions Site",
+    image: "/img/mohid-constructions.png",
+    link: "https://mohidconstructions.site/",
+    alt: "construction site",
+  },
+  {
+    title: "Headphones Landing Page",
+    image: "/img/landing-page.png",
+    link: "https://nasirkhan294.github.io/Headphones-Landing-page/",
+    alt: "landing page",
+  },
+  {
+    title: "Fresh Meal Shop",
+    image: "/img/ecommerce.png",
+    link: "https://nasirkhan294.github.io/freshmeal-shop/",
+    alt: "Ecommerce site",
+  },
+  {
+    title: "Halloween Website",
+    image: "/img/halloween.png",
+    link: "https://nasirkhan294.github.io/halloween-website/",
+    alt: "halloween site",
+  },
+  {
+    title: "Github Repo Gallery",
+    image: "/img/github-repos.png",
+    link: "https://github-repo-gallary.netlify.app/",
+    alt: "github repos",
+  },
+];
 
 const Portfolio = () => {
-  const theme = useContext(themeContext);
-  const darkMode = theme.state.darkMode;
+  const { state } = useTheme();
+  const { darkMode } = state;
+
   return (
-    <div className="portfolio" id="portfolio">
+    <div className="portfolio text-center" id="portfolio">
       {/* heading */}
-      <span style={{ color: darkMode ? "white" : "" }}>Recent Projects</span>
-      <span>Portfolio</span>
+      <h2
+        className="fw-bold"
+        style={{ color: darkMode ? "white" : "", fontSize: "2rem" }}
+      >
+        Recent Projects
+      </h2>
+      <h3
+        className="fw-bold"
+        style={{ color: "var(--orange)", fontSize: "2.5rem" }}
+      >
+        Portfolio
+      </h3>
 
       {/* slider */}
       <Swiper
+        modules={[Autoplay]}
         spaceBetween={30}
         slidesPerView={3}
         grabCursor={true}
-        className="portfolio-slider"
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        loop={true}
+        breakpoints={{
+          0: {
+            slidesPerView: 1,
+          },
+          640: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        }}
+        className="mt-5"
       >
-        <SwiperSlide>
-          <div className="box">
-            <img src={MohidConstructions} alt="" />
-            <div className="links">
-              <h3>Mohid Constructions Site</h3>
-              <a
-                href="https://mohidconstructions.site/"
-                target="_blank"
-                rel="noreferrer"
+        {projects.map(({ title, image, link, alt }, index) => (
+          <SwiperSlide key={index}>
+            <div className="rounded-4" style={{ border: "2px solid #f8ddb1" }}>
+              <img src={image} alt={alt} className="img-fluid rounded-4" />
+              <div
+                className="d-flex justify-content-between px-3 align-items-center"
+                style={{ height: "2.5rem" }}
               >
-                <Github />
-              </a>
+                <p className="fw-bold mb-0 portfolio-decs">{title}</p>
+                <a
+                  className="d-flex align-items-center p-link"
+                  href={link}
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ color: darkMode ? "white" : "" }}
+                >
+                  <Github />
+                </a>
+              </div>
             </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="box">
-            <img src={LandingPage} alt="" />
-            <div className="links">
-              <h3>Headphones Landing Page</h3>
-              <a
-                href="https://nasirkhan294.github.io/Headphones-Landing-page/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Github />
-              </a>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="box">
-            <img src={Ecommerce} alt="" />
-            <div className="links">
-              <h3>Fresh Meal Shop</h3>
-              <a
-                href="https://nasirkhan294.github.io/freshmeal-shop/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Github />
-              </a>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="box">
-            <img src={Halloween} alt="" />
-            <div className="links">
-              <h3>Halloween Website</h3>
-              <a
-                href="https://nasirkhan294.github.io/halloween-website/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Github />
-              </a>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="box">
-            <img src={GithubRepo} alt="" />
-            <div className="links">
-              <h3>Github Repo Gallery</h3>
-              <a
-                href="https://nasirkhan294.github.io/github-repo-gallery/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Github />
-              </a>
-            </div>
-          </div>
-        </SwiperSlide>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );
