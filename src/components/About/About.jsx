@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import "./About.css";
 import { useTheme } from "../../Context";
-import { Col, Row } from "react-bootstrap";
+import { Button, Col, Row } from "react-bootstrap";
 const About = () => {
   // context
   const { state } = useTheme();
@@ -12,7 +12,7 @@ const About = () => {
   return (
     <Row className="about px-0 px-lg-5" id="about">
       {/* left side */}
-      <Col lg={6}>
+      <Col lg={6} className="position-relative">
         {/* dark Mode */}
         <h2
           className="fw-bold"
@@ -40,7 +40,7 @@ const About = () => {
           adventure together!
         </p>
         <Link to="contact" smooth={true} spy={true}>
-          <button className="button mt-5 px-5">Hire Me</button>
+          <Button className="button mt-5 px-5">Hire Me</Button>
         </Link>
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
       </Col>

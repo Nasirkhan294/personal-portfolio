@@ -77,7 +77,7 @@ const Contact = () => {
             Contact me
           </h3>
           <div
-            className="blur s-blur1"
+            className="blur c-blur1"
             style={{ background: "#ABF1FF94" }}
           ></div>
         </div>

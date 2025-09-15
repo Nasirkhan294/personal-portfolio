@@ -2,6 +2,7 @@
 .contact-form {
     padding: 0 3rem;
     margin-top: 10rem;
+    position: relative;
 }
 
 .user {
@@ -17,7 +18,7 @@
 
 .c-blur1 {
     top: 1rem;
-    left: 8rem;
+    left: -5rem;
 }
 
 @media screen and (max-width: 480px) {

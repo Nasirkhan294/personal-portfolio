@@ -1,6 +1,6 @@
+import { Row, Col, Button, Container } from "react-bootstrap";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
-import { Row, Col, Button, Container } from "react-bootstrap";
 import "./Intro.css";
 import FloatinDiv from "../FloatingDiv/FloatingDiv";
 import { useTheme } from "../../Context";
@@ -97,9 +97,26 @@ const Intro = () => {
             transition={transition}
             className="floating-div"
           >
-            {/* floatinDiv mein change hy dark mode ka */}
-            <FloatinDiv img="/img/thumbup.png" text1="Best Design" text2="Award" />
+            <FloatinDiv
+              img="/img/thumbup.png"
+              text1="Best Design"
+              text2="Award"
+            />
           </motion.div>
+          <div
+            className="blur"
+            style={{ background: "rgb(238 210 255)" }}
+          ></div>
+          <div
+            className="blur"
+            style={{
+              background: "#C1F5FF",
+              top: "17rem",
+              width: "21rem",
+              height: "11rem",
+              left: "-9rem",
+            }}
+          ></div>
         </Col>
       </Row>
     </Container>

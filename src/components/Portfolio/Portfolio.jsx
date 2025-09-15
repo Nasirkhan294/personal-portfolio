@@ -21,7 +21,7 @@ const projects = [
   {
     title: "Fresh Meal Shop",
     image: "/img/ecommerce.png",
-    link: "https://nasirkhan294.github.io/freshmeal-shop/",
+    link: "https://freshmeal-shop.netlify.app/",
     alt: "Ecommerce site",
   },
   {
