@@ -26,7 +26,7 @@
 
 # 📖 Personal Portfolio <a name="about-project"></a>
 
-![Portfolio-image](/img/preview.png)
+![Portfolio-image](/public/img/preview.png)
 
 The **Personal Portfolio** project is a platform that highlights my technical skills, projects, and achievements. It serves as a professional portfolio to showcase my work to potential employers and collaborators.
 
