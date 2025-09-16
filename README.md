@@ -114,7 +114,9 @@ For Netlify, drag and drop your project folder into [Netlify Deploy](https://app
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Portfolio Card Auto Slider**
+- [ ] **Project Filtering/Search**
+- [ ] **Blog/Articles Section**
+- [ ] **Performance Optimization**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
