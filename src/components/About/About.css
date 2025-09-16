@@ -63,6 +63,26 @@
   top: 8rem;
 }
 
+.u-circle {
+  top: -5rem;
+  left: 6rem;
+}
+
+.l-circle {
+  top: 5rem;
+  left: -3rem;
+}
+
+.f-circle {
+  top: 16rem;
+  left: 6rem;
+}
+
+.g-circle {
+  top: 5rem;
+  left: 15rem;
+}
+
 @media screen and (max-width: 480px) {
   .about {
     margin: 6rem 0;
@@ -79,6 +99,19 @@
   .w-mainCircle {
     position: static;
   }
+
+  .u-circle {
+    left: 5rem;
+  }
+
+  .f-circle {
+    left: 5rem;
+  }
+
+  .g-circle {
+    left: 13rem;
+  }
+
 
   .w-backCircle {
     left: 8rem !important;

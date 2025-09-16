@@ -1,8 +1,8 @@
+import { Button, Col, Row } from "react-bootstrap";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import "./About.css";
 import { useTheme } from "../../Context";
-import { Button, Col, Row } from "react-bootstrap";
 const About = () => {
   // context
   const { state } = useTheme();
@@ -53,16 +53,16 @@ const About = () => {
           transition={{ duration: 3.5, type: "spring" }}
           className="w-mainCircle"
         >
-          <div className="w-secCircle" style={{ top: "-5rem", left: "6rem" }}>
+          <div className="w-secCircle u-circle">
             <img src="/img/Upwork.png" alt="Upwork" />
           </div>
-          <div className="w-secCircle" style={{ top: "5rem", left: "-3rem" }}>
+          <div className="w-secCircle l-circle">
             <img src="/img/linkedin.png" alt="Linkedin" />
           </div>
-          <div className="w-secCircle" style={{ top: "16rem", left: "6rem" }}>
+          <div className="w-secCircle f-circle">
             <img src="/img/fiverr.png" alt="Fiver" />
           </div>
-          <div className="w-secCircle" style={{ top: "5rem", left: "15rem" }}>
+          <div className="w-secCircle g-circle">
             <img src="/img/github.png" alt="Github" />
           </div>
         </motion.div>
