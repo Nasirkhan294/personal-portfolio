@@ -1,7 +1,10 @@
 import { Container, Navbar, Nav, Button } from "react-bootstrap";
 import Toggle from "../Toggle/Toggle";
+import { useState } from "react";
 
 const AppNavbar = () => {
+  const [activeLink, setActiveLink] = useState("home")
+
   return (
     <Container
       className="d-flex justify-content-between px-0"
@@ -24,11 +27,13 @@ const AppNavbar = () => {
           <Nav
             className="d-flex align-items-center mb-0"
             style={{ listStyleType: "none", gap: "2rem", marginRight: "5rem" }}
+            activeKey={activeLink}
+            onSelect={(selectedKey) => setActiveLink(selectedKey)}
           >
-            <Nav.Link href="#">Home</Nav.Link>
-            <Nav.Link href="#services">Serivces</Nav.Link>
-            <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#portfolio">Protfolio</Nav.Link>
+            <Nav.Link eventKey="home" href="#">Home</Nav.Link>
+            <Nav.Link eventKey="services" href="#services">Serivces</Nav.Link>
+            <Nav.Link eventKey="about" href="#about">About</Nav.Link>
+            <Nav.Link eventKey="portfolio" href="#portfolio">Protfolio</Nav.Link>
           </Nav>
         </Navbar>
         <Nav.Link href="#contact">

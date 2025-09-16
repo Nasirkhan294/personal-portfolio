@@ -9,6 +9,10 @@
   position: absolute;
 }
 
+.card-decs {
+  color: var(--gray);
+}
+
 /* blur */
 .s-blur2 {
   left: 14rem;
