@@ -1,5 +1,3 @@
-import React from "react";
-
 const Card = ({ emoji, heading, detail }) => {
   return (
     <div
@@ -10,7 +8,7 @@ const Card = ({ emoji, heading, detail }) => {
         shadow rounded-4 px-3
       "
       style={{
-        width: "15rem",
+        width: "16rem",
         height: "16rem",
         background: "rgba(255,255,255,0.26)",
         border: `7px solid var(--orangeCard)`,

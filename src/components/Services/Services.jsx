@@ -69,7 +69,7 @@ const Services = () => {
           {/* second card */}
           <motion.div
             initial={{ left: "-11rem", top: "12rem" }}
-            whileInView={{ left: "-4rem" }}
+            whileInView={{ left: "-6rem" }}
             transition={transition}
           >
             <Card
