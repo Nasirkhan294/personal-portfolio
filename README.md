@@ -34,7 +34,9 @@ The **Personal Portfolio** project is a platform that highlights my technical sk
 
   <ul>
     <li>React</li>
+    <li>Bootstrap 5</li>
     <li>CSS</li>
+    <li>Framer Motion</li>
     <li>SwiperJs</li>
   </ul>
 
