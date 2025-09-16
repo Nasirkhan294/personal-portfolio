@@ -19,7 +19,7 @@ const Experience = () => {
         >
           5+
         </div>
-        <span style={{ color: darkMode ? "white" : "" }}>years </span>
+        <span style={{ color: darkMode ? "white" : "" }}>Years </span>
         <span style={{ color: "var(--orange)" }}>Experience</span>
       </div>
       <div className="d-flex flex-column align-items-center">
@@ -29,7 +29,7 @@ const Experience = () => {
         >
           45+
         </div>
-        <span style={{ color: darkMode ? "white" : "" }}>completed </span>
+        <span style={{ color: darkMode ? "white" : "" }}>Completed </span>
         <span style={{ color: "var(--orange)" }}>Projects</span>
       </div>
       <div className="d-flex flex-column align-items-center">
@@ -39,7 +39,7 @@ const Experience = () => {
         >
           2+
         </div>
-        <span style={{ color: darkMode ? "white" : "" }}>companies </span>
+        <span style={{ color: darkMode ? "white" : "" }}>Companies </span>
         <span style={{color: "var(--orange)"}}>Work</span>
       </div>
     </Container>

@@ -29,6 +29,7 @@ body {
 
 a {
   cursor: pointer;
+  color: var(--gray);
 }
 
 a:hover {

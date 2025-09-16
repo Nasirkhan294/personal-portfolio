@@ -1,9 +1,12 @@
+import { useState } from "react";
 import { Container, Navbar, Nav, Button } from "react-bootstrap";
 import Toggle from "../Toggle/Toggle";
-import { useState } from "react";
+import { useTheme } from "../../Context";
 
 const AppNavbar = () => {
-  const [activeLink, setActiveLink] = useState("home")
+  const [activeLink, setActiveLink] = useState("home");
+  const { state } = useTheme();
+  const { darkMode } = state;
 
   return (
     <Container
@@ -30,10 +33,34 @@ const AppNavbar = () => {
             activeKey={activeLink}
             onSelect={(selectedKey) => setActiveLink(selectedKey)}
           >
-            <Nav.Link eventKey="home" href="#">Home</Nav.Link>
-            <Nav.Link eventKey="services" href="#services">Serivces</Nav.Link>
-            <Nav.Link eventKey="about" href="#about">About</Nav.Link>
-            <Nav.Link eventKey="portfolio" href="#portfolio">Protfolio</Nav.Link>
+            <Nav.Link
+              eventKey="home"
+              href="#"
+              style={{ color: darkMode ? "white" : "" }}
+            >
+              Home
+            </Nav.Link>
+            <Nav.Link
+              eventKey="services"
+              href="#services"
+              style={{ color: darkMode ? "white" : "" }}
+            >
+              Serivces
+            </Nav.Link>
+            <Nav.Link
+              eventKey="about"
+              href="#about"
+              style={{ color: darkMode ? "white" : "" }}
+            >
+              About
+            </Nav.Link>
+            <Nav.Link
+              eventKey="portfolio"
+              href="#portfolio"
+              style={{ color: darkMode ? "white" : "" }}
+            >
+              Protfolio
+            </Nav.Link>
           </Nav>
         </Navbar>
         <Nav.Link href="#contact">
